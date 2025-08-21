@@ -9,7 +9,7 @@ const Header = () => {
             <Row>
                 <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={12}>
                 <div className="inner_area">
-                    <h3>Header section</h3>
+                    <h3>Header section homepage </h3>
                 </div>
                 </Col>
             </Row>
