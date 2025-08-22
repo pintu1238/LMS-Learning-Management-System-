@@ -300,8 +300,15 @@
 
       .menu_area {
         height: 30px;
-        width: 30px;
+        width: 25px;
         color: #6f2dbd;
+        .three_lines {
+          height: 30px;
+          width: 25px;
+        }
+      }
+      .cart_area {
+        margin-right: 10px;
       }
     }
   }
@@ -329,6 +336,19 @@
         display: flex;
         align-items: center;
 
+        .menu_area {
+          height: 30px;
+          width: 25px;
+          color: #6f2dbd;
+          .three_lines {
+            height: 30px;
+            width: 25px;
+          }
+        }
+        .cart_area {
+          margin-right: 10px;
+        }
+
         .image_area {
           margin-right: 12px;
           height: 40px;
@@ -354,6 +374,15 @@
 
       .right_area {
         width: calc(100% - 350px);
+
+        .menu_area {
+          height: 30px;
+          width: 25px;
+          color: #6f2dbd;
+        }
+        .cart_area {
+          margin-right: 10px;
+        }
 
         .plans_area,
         .cart_area,
@@ -416,9 +445,6 @@
           width: 50px;
           border: none;
 
-          svg {
-          }
-
           input {
             display: none;
           }
@@ -428,25 +454,27 @@
       .right_area {
         width: calc(100% - 350px);
 
+        .menu_area {
+          height: 30px;
+          width: 25px;
+          color: #6f2dbd;
+          .three_lines {
+            height: 30px;
+            width: 25px;
+          }
+        }
+        .cart_area {
+          margin-right: 10px;
+        }
+
         .plans_area,
         .cart_area,
         .auth_links {
-          a {
-            font-size: 16px;
-
-            padding: 6px 8px;
-
-            margin-right: 5px;
-          }
-        }
-        .auth_links {
-          a {
-            padding: 5px;
-            display: none;
-          }
-        }
-        .plans_area {
           display: none;
+        }
+
+        .menu_area {
+          display: block;
         }
       }
     }
@@ -500,6 +528,20 @@
 
       .right_area {
         width: calc(100% - 350px);
+
+        .menu_area {
+          height: 30px;
+          width: 25px;
+          color: #6f2dbd;
+
+          .three_lines {
+            height: 30px;
+            width: 25px;
+          }
+        }
+        .cart_area {
+          margin-right: 10px;
+        }
 
         .plans_area,
         .cart_area,
@@ -573,6 +615,20 @@
 
       .right_area {
         width: calc(100% - 350px);
+
+        .menu_area {
+          height: 30px;
+          width: 25px;
+          color: #6f2dbd;
+
+          .three_lines {
+            height: 30px;
+            width: 25px;
+          }
+        }
+        .cart_area {
+          margin-right: 10px;
+        }
 
         .plans_area,
         .cart_area,

@@ -40,10 +40,6 @@ const Header = () => {
                 </div>
 
                 <div className="right_area">
-                  <nav className="plans_area">
-                    <Link href="#">Plans & Pricing</Link>
-                  </nav>
-
                   <div className="cart_area">
                     <Link href="#">
                       <FontAwesomeIcon
@@ -52,8 +48,15 @@ const Header = () => {
                       />
                     </Link>
                   </div>
+                  <nav className="plans_area">
+                    <Link href="#">Plans & Pricing</Link>
+                  </nav>
+
                   <div className="menu_area">
-                    <FontAwesomeIcon icon={['fas', 'bars']} />
+                    <FontAwesomeIcon
+                      icon={['fas', 'bars']}
+                      className="three_lines"
+                    />
                   </div>
                   <ul className="auth_links">
                     <li>
