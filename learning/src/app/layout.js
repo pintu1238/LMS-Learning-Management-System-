@@ -4,6 +4,7 @@ import '../../public/sass/base/helper.scss';
 import '../../public/sass/base/reset.scss';
 import Header from './components/header';
 import Footer from './components/footer';
+import Banner from './components/banner';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const geistSans = Geist({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={'${geistSans.variable} ${geistMono.variable}'}>
         <Header />
+        <Banner />
         {children}
         <Footer />
       </body>
