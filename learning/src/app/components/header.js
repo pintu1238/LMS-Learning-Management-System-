@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../public/sass/pages/demo.scss';
-
+// import "../../../public/sass/pages/header.scss";
 // import '../../public/sass/pages/header.scss';
 import { Col, Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
