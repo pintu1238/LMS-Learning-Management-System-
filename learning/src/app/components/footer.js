@@ -1,9 +1,9 @@
-import Link from "next/link";
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-import "../../../public/sass/pages/footer.scss";
-import udemy_footer from "../../../public/images/udemy_logo.jpg";
+import Link from 'next/link';
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import Image from 'next/image';
+import '../../../public/sass/pages/footer.scss';
+import udemy_footer from '../../../public/images/udemy_logo.jpg';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
       <section className="footer">
         <Container>
           <Row>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={12}>
+            <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12}>
               <div className="inner_area">
                 <h3>About</h3>
                 <ul>
@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
             </Col>
 
-            <Col xxl={3} xl={3} lg={3} md={6} sm={12}>
+            <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12}>
               <div className="inner_area">
                 <h3>Discover Udemy</h3>
                 <ul type="none">
@@ -57,7 +57,7 @@ const Footer = () => {
               </div>
             </Col>
 
-            <Col xxl={3} xl={3} lg={3} md={6} sm={12}>
+            <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12}>
               <div className="inner_area">
                 <h3>Udemy for Business</h3>
                 <ul>
@@ -68,7 +68,7 @@ const Footer = () => {
               </div>
             </Col>
 
-            <Col xxl={3} xl={3} lg={3} md={6} sm={12}>
+            <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12}>
               <div className="inner_area">
                 <h3>Legal & Accessibility</h3>
                 <ul>
@@ -88,23 +88,29 @@ const Footer = () => {
               </div>
             </Col>
             <hr />
-
-            <div className="below_footer">
-              <div className="footer_img">
-                <div className="footer_logo">
-                  <Image
-                    src={udemy_footer}
-                    alt="udemy"
-                    title="udemy_logo"
-                    fetchPriority="high"
-                    height={40}
-                    width={100}
-                  />
-                </div>
-                <p>2025 Udemy inc.</p>
-              </div>
-            </div>
           </Row>
+          <div className="below_footer">
+            <div className="footer_img">
+              <div className="footer_logo">
+                <Image
+                  src={udemy_footer}
+                  alt="udemy"
+                  title="udemy_logo"
+                  fetchPriority="high"
+                  height={40}
+                  width={100}
+                />
+              </div>
+              <p>2025 Udemy inc.</p>
+            </div>
+
+            <div className="cs">
+              <h3>Cookie Settings</h3>
+            </div>
+            <div className="language">
+              <h3>language</h3>
+            </div>
+          </div>
         </Container>
       </section>
     </>
