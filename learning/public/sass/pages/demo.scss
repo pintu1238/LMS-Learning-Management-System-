@@ -100,8 +100,8 @@
       }
 
       .cart_area {
-        height: 60px;
-        width: 60px;
+        height: 45px;
+        width: 45px;
 
         .cart_logo {
           height: 100%;
@@ -147,14 +147,23 @@
 
 /* 1680 desktop */
 @media (min-width: 1680px) and (max-width: 1919px) {
+  .menu_area {
+    display: none;
+  }
 }
 
 /* 1600 desktop */
 @media (min-width: 1600px) and (max-width: 1679px) {
+  .menu_area {
+    display: none;
+  }
 }
 
 /* Above 1400 and Below 1599 Desktop*/
 @media (min-width: 1400px) and (max-width: 1599px) {
+  .menu_area {
+    display: none;
+  }
 }
 
 /* 1300 desktop only */
@@ -174,6 +183,10 @@
 
       .right_area {
         width: calc(100% - 612px);
+
+        .menu_area {
+          display: none;
+        }
       }
     }
   }
@@ -196,6 +209,10 @@
 
       .right_area {
         width: calc(100% - 600px);
+
+        .menu_area {
+          display: none;
+        }
       }
     }
   }
@@ -223,6 +240,10 @@
 
       .right_area {
         width: calc(100% - 430px);
+
+        .menu_area {
+          display: none;
+        }
       }
     }
   }
@@ -275,6 +296,7 @@
 
       .right_area {
         width: calc(100% - 350px);
+        text-align: end;
 
         .plans_area,
         .cart_area,
@@ -289,7 +311,6 @@
         }
         .auth_links {
           a {
-            padding: 5px;
             display: none;
           }
         }
@@ -299,16 +320,16 @@
       }
 
       .menu_area {
-        height: 30px;
-        width: 25px;
-        color: #6f2dbd;
-        .three_lines {
-          height: 30px;
-          width: 25px;
-        }
+        display: none;
       }
       .cart_area {
         margin-right: 10px;
+
+        height: 40px;
+        width: 40px;
+      }
+      .menu_area {
+        display: none;
       }
     }
   }
@@ -363,9 +384,6 @@
           width: 50px;
           border: none;
 
-          svg {
-          }
-
           input {
             display: none;
           }
@@ -388,7 +406,7 @@
         .cart_area,
         .auth_links {
           a {
-            font-size: 16px;
+            font-size: 14px;
 
             padding: 6px 8px;
 
@@ -402,6 +420,14 @@
           }
         }
         .plans_area {
+          display: none;
+        }
+
+        .cart_area {
+          height: 40px;
+          width: 40px;
+        }
+        .menu_area {
           display: none;
         }
       }
@@ -546,17 +572,10 @@
         .plans_area,
         .cart_area,
         .auth_links {
-          a {
-            font-size: 16px;
-
-            padding: 6px 8px;
-
-            margin-right: 5px;
-          }
+          display: none;
         }
         .auth_links {
           a {
-            padding: 5px;
             display: none;
           }
         }
@@ -633,17 +652,10 @@
         .plans_area,
         .cart_area,
         .auth_links {
-          a {
-            font-size: 16px;
-
-            padding: 6px 8px;
-
-            margin-right: 5px;
-          }
+          display: none;
         }
         .auth_links {
           a {
-            padding: 5px;
             display: none;
           }
         }
