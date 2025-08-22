@@ -33,10 +33,10 @@ const Header = () => {
                     <Link href="#">Explore</Link>
                   </nav>
 
-                  <form className="search_box">
+                  <div className="search_box">
                     <FontAwesomeIcon icon={['fab', 'searchengin']} />
                     <input type="text" placeholder="Search for anything" />
-                  </form>
+                  </div>
                 </div>
 
                 <div className="right_area">
@@ -46,10 +46,15 @@ const Header = () => {
 
                   <div className="cart_area">
                     <Link href="#">
-                    <FontAwesomeIcon icon={["fas", "cart-plus"]} className='cart_logo'/>
+                      <FontAwesomeIcon
+                        icon={['fas', 'cart-plus']}
+                        className="cart_logo"
+                      />
                     </Link>
                   </div>
-
+                  <div className="menu_area">
+                    <FontAwesomeIcon icon={['fas', 'bars']} />
+                  </div>
                   <ul className="auth_links">
                     <li>
                       <Link href="#">Log in</Link>
