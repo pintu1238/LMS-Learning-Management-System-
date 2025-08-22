@@ -52,7 +52,9 @@ const Header = () => {
                       />
                     </Link>
                   </div>
-
+                  <div className="menu_area">
+                    <FontAwesomeIcon icon={['fas', 'bars']} />
+                  </div>
                   <ul className="auth_links">
                     <li>
                       <Link href="#">Log in</Link>
