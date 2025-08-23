@@ -14,6 +14,11 @@ ul {
   box-sizing: border-box;
 }
 
+ol,
+ul {
+  padding-left: 0rem !important;
+}
+
 h1,
 h2,
 h3,

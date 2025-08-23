@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import '../../../public/sass/pages/banner.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-// Import Swiper styles
+
 import 'swiper/css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';

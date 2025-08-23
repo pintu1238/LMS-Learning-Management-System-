@@ -1,8 +1,10 @@
 .banner_section {
   position: relative;
+  margin-bottom: 70px;
   .inner_area {
     // position: relative;
     padding: 40px 0;
+
     &::after {
       content: '';
       display: block;
@@ -33,7 +35,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 400px;
+        min-height: 600px;
         .text_area {
           &:hover {
             background-color: rgb(44, 62, 80);
@@ -189,6 +191,7 @@
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   .banner_section {
+    margin-bottom: 50px;
     .inner_area {
       .left_area {
         width: 500px;
@@ -203,6 +206,7 @@
 /* Landscape tablets and ipad */
 @media (min-width: 768px) and (max-width: 991px) {
   .banner_section {
+    margin-bottom: 40px;
     .inner_area {
       .left_area {
         width: 350px;
@@ -217,13 +221,18 @@
 /* Landscape phones and portrait tablets */
 @media (min-width: 576px) and (max-width: 767px) {
   .banner_section {
+    margin-bottom: 30px;
     .inner_area {
       .left_area {
-        width: 300px;
-
+        float: none;
+        text-align: center;
+        width: 100%;
         .content {
+          text-align: center;
+          min-height: auto;
           .text_area {
             padding: 10px 20px;
+            margin-bottom: 20px;
             .heading {
               font-size: 30px;
             }
@@ -231,7 +240,9 @@
         }
       }
       .right_area {
-        width: calc(100% - 300px);
+        float: none;
+        // width: calc(100% - 300px);
+        width: 100%;
         .card_area {
           .video_area {
             iframe {
@@ -247,15 +258,20 @@
 /* Landscape phones and portrait tablets */
 @media (min-width: 361px) and (max-width: 575px) {
   .banner_section {
+    margin-bottom: 25px;
     .inner_area {
       .left_area {
-        display: none;
-        width: 300px;
+        // display: none;
+        float: none;
+        width: 100%;
 
         .content {
+          min-height: auto;
           .text_area {
+            padding: 10px 20px;
+            margin-bottom: 20px;
             .heading {
-              font-size: 30px;
+              font-size: 22px;
             }
           }
         }
@@ -263,6 +279,7 @@
       .right_area {
         // width: calc(100% - 300px);
         width: 100%;
+        float: none;
         .card_area {
           .video_area {
             iframe {
@@ -278,15 +295,20 @@
 /* Smaller phones */
 @media (max-width: 360px) {
   .banner_section {
+    margin-bottom: 25px;
     .inner_area {
       .left_area {
-        display: none;
-        width: 300px;
+        // display: none;
+        width: 100%;
+        float: none;
 
         .content {
+          min-height: auto;
           .text_area {
+            padding: 10px 20px;
+            margin-bottom: 20px;
             .heading {
-              font-size: 30px;
+              font-size: 22px;
             }
           }
         }
@@ -294,6 +316,7 @@
       .right_area {
         // width: calc(100% - 300px);
         width: 100%;
+        float: none;
         .card_area {
           .video_area {
             iframe {
@@ -309,15 +332,20 @@
 /* Smaller phones */
 @media (max-width: 320px) {
   .banner_section {
+    margin-bottom: 25px;
     .inner_area {
       .left_area {
-        display: none;
-        width: 300px;
+        // display: none;
+        float: none;
+        width: 100%;
 
         .content {
+          min-height: auto;
           .text_area {
+            padding-bottom: 10px 20px;
+            margin-bottom: 20px;
             .heading {
-              font-size: 30px;
+              font-size: 20px;
             }
           }
         }
@@ -325,6 +353,7 @@
       .right_area {
         // width: calc(100% - 300px);
         width: 100%;
+        float: none;
         .card_area {
           .video_area {
             iframe {
