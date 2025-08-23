@@ -10,7 +10,7 @@ import Third_sec from './components/third_sec';
 import All_courses from './components/all_courses';
 
 import Analytics from './components/analytics';
-
+import Plan from './components/plan';
 import Fifth_sec from './components/fifth_sec';
 
 const geistSans = Geist({
@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
         <Analytics />
 
         <Fifth_sec />
+        <Plan />
 
         {children}
         <Footer />
