@@ -6,6 +6,10 @@ import Image from "next/image";
 import Card3_1 from "../../../public/images/third_sec1.webp";
 import Card3_2 from "../../../public/images/third_sec2.webp";
 import Card3_3 from "../../../public/images/third_sec3.webp";
+import Card3_4 from "../../../public/images/third_sec4.webp";
+import Card3_5 from "../../../public/images/third_sec5.webp";
+
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -44,7 +48,7 @@ const Third_sec = () => {
             slidesPerView={3}
             autoplay={{
               delay: 3000,
-              disableOnInteraction: false,
+              disableOnInteraction: true,
             }}
             loop={true}
             navigation={{
@@ -66,7 +70,7 @@ const Third_sec = () => {
               576: { slidesPerView: 2, spaceBetween: 20 },
 
               // 768px - 991px (tablets)
-              768: { slidesPerView: 2.5, spaceBetween: 20 },
+              768: { slidesPerView: 2, spaceBetween: 20 },
 
               // 992px - 1199px (medium desktops)
               992: { slidesPerView: 3, spaceBetween: 25 },
@@ -81,13 +85,13 @@ const Third_sec = () => {
               1400: { slidesPerView: 3, spaceBetween: 30 },
 
               // 1600px - 1679px
-              1600: { slidesPerView: 5, spaceBetween: 35 },
+              1600: { slidesPerView: 3, spaceBetween: 35 },
 
               // 1680px - 1919px
-              1680: { slidesPerView: 5.5, spaceBetween: 35 },
+              1680: { slidesPerView: 3, spaceBetween: 35 },
 
               // 1920px and above
-              1920: { slidesPerView: 6, spaceBetween: 40 },
+              1920: { slidesPerView: 3, spaceBetween: 40 },
             }}
           >
             <SwiperSlide>
@@ -148,14 +152,14 @@ const Third_sec = () => {
               <div className="career_card">
                 <div className="card_image">
                   <Image
-                    src={Card3_1}
+                    src={Card3_5}
                     alt="Full Stack Web Developer"
                     title="images"
                     fetchPriority="low"
                   />
                 </div>
                 <div className="card_content">
-                  <h4>Full Stack Web Developer</h4>
+                  <h4>Ai Engineer</h4>
                   <div className="rating_row">
                     <div className="star_logo badge_item">
                       <FontAwesomeIcon
@@ -164,8 +168,63 @@ const Third_sec = () => {
                       />
                       4.7
                     </div>
-                    <p className="badge_item">455K ratings</p>
+                    <p className="badge_item">855K ratings</p>
                     <p className="badge_item">87.8 total hours</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+
+             <SwiperSlide>
+              <div className="career_card">
+                <div className="card_image">
+                  <Image
+                    src={Card3_3}
+                    alt="Cyber Security"
+                    title="images"
+                    fetchPriority="low"
+                  />
+                </div>
+                <div className="card_content">
+                  <h4>Cyber Security</h4>
+                  <div className="rating_row">
+                    <div className="star_logo badge_item">
+                      <FontAwesomeIcon
+                        icon={["fas", "star"]}
+                        className="star_icon"
+                      />
+                      4.1
+                    </div>
+                    <p className="badge_item">355K ratings</p>
+                    <p className="badge_item">57.8 total hours</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+             <SwiperSlide>
+              <div className="career_card">
+                <div className="card_image">
+                  <Image
+                    src={Card3_4}
+                    alt="Software Developer"
+                    title="images"
+                    fetchPriority="low"
+                  />
+                </div>
+                <div className="card_content">
+                  <h4>Software Developer</h4>
+                  <div className="rating_row">
+                    <div className="star_logo badge_item">
+                      <FontAwesomeIcon
+                        icon={["fas", "star"]}
+                        className="star_icon"
+                      />
+                      4.9
+                    </div>
+                    <p className="badge_item">655K ratings</p>
+                    <p className="badge_item">97.8 total hours</p>
                   </div>
                 </div>
               </div>
