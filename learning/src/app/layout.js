@@ -8,6 +8,8 @@ import Banner from './components/banner';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Third_sec from './components/third_sec';
 import All_courses from './components/all_courses';
+import Fifth_sec from './components/fifth_sec';
+
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -32,6 +34,7 @@ export default function RootLayout({ children }) {
         <Banner />
         <Third_sec />
         <All_courses />
+        <Fifth_sec />
         {children}
         <Footer />
       </body>
