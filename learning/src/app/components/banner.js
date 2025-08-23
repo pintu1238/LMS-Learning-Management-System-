@@ -25,7 +25,9 @@ const Banner = () => {
                 <div className="left_area">
                   <div className="content">
                     <div className="text_area">
-                      <h3 className="heading">Always something new to learn</h3>
+                      <h3 className="heading">
+                        Always <span className="s">something new</span> to learn
+                      </h3>
                       <p className="desc">
                         With courses addded regularly to our catalog you can get
                         acces to our latest skills sale drom 479 today.
