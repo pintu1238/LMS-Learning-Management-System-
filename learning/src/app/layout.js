@@ -1,9 +1,13 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import '../../public/sass/base/helper.scss';
 import '../../public/sass/base/reset.scss';
 import Header from './components/header';
 import Footer from './components/footer';
+
+
+
 
 
 
@@ -29,9 +33,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={'${geistSans.variable} ${geistMono.variable}'}>
         <Header />
-
-
-
 
         {children}
         <Footer />
