@@ -33,21 +33,17 @@
       }
     }
     .tab_navigation {
-      height: 20px;
+      min-height: 20px;
       ul {
         li {
           display: inline-block;
           margin-right: 20px;
-          margin-bottom: 10px;
-
+          // margin-bottom: 10px;
+          // padding-bottom: 10px;
           transition: all 0.35s ease-in-out;
 
           &:hover {
-            color: white;
-            background-color: gray;
-
-            padding: 5px 8px;
-            border-radius: 12px;
+            text-decoration: underline;
           }
 
           &:last-child {
@@ -65,6 +61,7 @@
   }
 
   .select_courses_area {
+    margin-top: 10px;
     background-color: rgb(246, 247, 249);
     .inner_area_two {
       padding: 20px 0;

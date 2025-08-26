@@ -1,17 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import '../../public/sass/base/helper.scss';
 import '../../public/sass/base/reset.scss';
 import Header from './components/header';
 import Footer from './components/footer';
-import Banner from './components/banner';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Third_sec from './components/third_sec';
-import All_courses from './components/all_courses';
-
-import Analytics from './components/analytics';
-import Plan from './components/plan';
-import Fifth_sec from './components/fifth_sec';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -33,15 +26,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={'${geistSans.variable} ${geistMono.variable}'}>
         <Header />
-        <Banner />
-        <Third_sec />
-        <All_courses />
-
-        <Analytics />
-
-        <Fifth_sec />
-        <Plan />
-
         {children}
         <Footer />
       </body>
