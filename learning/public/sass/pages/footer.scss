@@ -68,10 +68,11 @@
           transition: all 0.3s ease;
 
           &:hover {
-            background: rgba(111, 45, 189, 0.2);
-            color: #6f2dbd;
-            box-shadow: 0 4px 10px rgba(111, 45, 189, 0.4);
-            transform: translateY(-2px);
+            text-decoration: underline;
+            // background: rgba(111, 45, 189, 0.2);
+            // color: #6f2dbd;
+            // box-shadow: 0 4px 10px rgba(111, 45, 189, 0.4);
+            // transform: translateY(-2px);
           }
         }
       }
@@ -101,14 +102,17 @@
         }
       }
 
-      p {
+      a {
         display: inline-block;
         font-size: 14px;
         font-weight: 600;
         transition: color 0.3s ease;
+        color: white;
+        text-decoration: none;
 
         &:hover {
-          color: #6f2dbd;
+          text-decoration: underline;
+          // color: #6f2dbd;
         }
       }
     }
@@ -122,8 +126,9 @@
         transition: all 0.3s ease;
 
         &:hover {
-          color: #6f2dbd;
-          text-shadow: 0 0 6px rgba(111, 45, 189, 0.7);
+          text-decoration: underline;
+          // color: #6f2dbd;
+          // text-shadow: 0 0 6px rgba(111, 45, 189, 0.7);
         }
       }
     }

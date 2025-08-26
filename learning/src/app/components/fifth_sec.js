@@ -166,7 +166,7 @@ const Fifth_sec = () => {
               slidesPerView={7}
               className="brand_Swiper"
               loop={true}
-              speed={4000}
+              speed={2000}
               autoplay={{
                 delay: 0,
                 disableOnInteraction: false,

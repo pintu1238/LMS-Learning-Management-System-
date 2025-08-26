@@ -12,6 +12,8 @@ import All_courses from './components/all_courses';
 import Analytics from './components/analytics';
 import Plan from './components/plan';
 import Fifth_sec from './components/fifth_sec';
+import Feedback from './components/feedback';
+
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -39,8 +41,10 @@ export default function RootLayout({ children }) {
 
         <Analytics />
 
+
         <Fifth_sec />
         <Plan />
+        <Feedback />
 
         {children}
         <Footer />

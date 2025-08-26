@@ -101,7 +101,7 @@ const Footer = () => {
                   width={100}
                 />
               </div>
-              <p>2025 Udemy inc.</p>
+              <Link href="#">2025 Udemy inc.</Link>
             </div>
 
             <div className="cs">
