@@ -9,6 +9,7 @@ import Footer from './components/footer';
 
 import { Geist } from 'next/font/google';
 // Geist font import
+
 const geistSans = Geist({
   subsets: ['latin'],
   weight: ['400', '700'],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={geistSans.className}>
         <Header />
+
         {children}
         <Footer />
       </body>
