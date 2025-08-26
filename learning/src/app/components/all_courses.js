@@ -146,7 +146,7 @@ const All_courses = () => {
                       slidesPerView={4}
                       navigation
                       pagination={{ clickable: true }}
-                      scrollbar={{ draggable: true }}
+                      // scrollbar={{ draggable: true }}
                       // autoplay={{
                       //   delay: 2500,
                       //   disableOnInteraction: false,

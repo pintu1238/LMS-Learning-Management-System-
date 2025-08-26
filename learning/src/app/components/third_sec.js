@@ -1,29 +1,28 @@
-"use client";
-import React from "react";
-import "../../../public/sass/pages/third_sec.scss";
-import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-import Card3_1 from "../../../public/images/third_sec1.webp";
-import Card3_2 from "../../../public/images/third_sec2.webp";
-import Card3_3 from "../../../public/images/third_sec3.webp";
-import Card3_4 from "../../../public/images/third_sec4.webp";
-import Card3_5 from "../../../public/images/third_sec5.webp";
+'use client';
+import React from 'react';
+import '../../../public/sass/pages/third_sec.scss';
+import { Col, Container, Row } from 'react-bootstrap';
+import Image from 'next/image';
+import Card3_1 from '../../../public/images/third_sec1.webp';
+import Card3_2 from '../../../public/images/third_sec2.webp';
+import Card3_3 from '../../../public/images/third_sec3.webp';
+import Card3_4 from '../../../public/images/third_sec4.webp';
+import Card3_5 from '../../../public/images/third_sec5.webp';
 
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faStar);
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Autoplay, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Third_sec = () => {
   return (
@@ -52,11 +51,11 @@ const Third_sec = () => {
             }}
             loop={true}
             navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
             }}
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
+            // scrollbar={{ draggable: true }}
             // onSwiper={(swiper) => console.log(swiper)}
             // onSlideChange={() => console.log("slide change")}
             breakpoints={{
@@ -109,7 +108,7 @@ const Third_sec = () => {
                   <div className="rating_row">
                     <div className="star_logo badge_item">
                       <FontAwesomeIcon
-                        icon={["fas", "star"]}
+                        icon={['fas', 'star']}
                         className="star_icon"
                       />
                       4.7
@@ -136,7 +135,7 @@ const Third_sec = () => {
                   <div className="rating_row">
                     <div className="star_logo badge_item">
                       <FontAwesomeIcon
-                        icon={["fas", "star"]}
+                        icon={['fas', 'star']}
                         className="star_icon"
                       />
                       4.9
@@ -163,7 +162,7 @@ const Third_sec = () => {
                   <div className="rating_row">
                     <div className="star_logo badge_item">
                       <FontAwesomeIcon
-                        icon={["fas", "star"]}
+                        icon={['fas', 'star']}
                         className="star_icon"
                       />
                       4.7
@@ -175,8 +174,7 @@ const Third_sec = () => {
               </div>
             </SwiperSlide>
 
-
-             <SwiperSlide>
+            <SwiperSlide>
               <div className="career_card">
                 <div className="card_image">
                   <Image
@@ -191,7 +189,7 @@ const Third_sec = () => {
                   <div className="rating_row">
                     <div className="star_logo badge_item">
                       <FontAwesomeIcon
-                        icon={["fas", "star"]}
+                        icon={['fas', 'star']}
                         className="star_icon"
                       />
                       4.1
@@ -203,7 +201,7 @@ const Third_sec = () => {
               </div>
             </SwiperSlide>
 
-             <SwiperSlide>
+            <SwiperSlide>
               <div className="career_card">
                 <div className="card_image">
                   <Image
@@ -218,7 +216,7 @@ const Third_sec = () => {
                   <div className="rating_row">
                     <div className="star_logo badge_item">
                       <FontAwesomeIcon
-                        icon={["fas", "star"]}
+                        icon={['fas', 'star']}
                         className="star_icon"
                       />
                       4.9

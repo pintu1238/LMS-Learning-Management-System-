@@ -15,6 +15,7 @@ const Homepage = () => {
       <All_courses />
       <Analytics />
       <Fifth_sec />
+
       <Plan />
     </>
   );
