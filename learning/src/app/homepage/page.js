@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../public/sass/pages/demo.scss';
 import Blog from '../components/blog';
 import { Col, Container, Row } from 'react-bootstrap';
-import Feedback from 'react-bootstrap/esm/Feedback';
+import Feedback from '../components/feedback';
 import Banner from '../components/banner';
 import Third_sec from '../components/third_sec';
 import All_courses from '../components/all_courses';

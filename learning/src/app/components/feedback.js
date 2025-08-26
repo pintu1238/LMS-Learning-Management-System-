@@ -104,29 +104,6 @@ const Feedback = () => {
       </Container>
     </div>
 
-// import { Container, Row } from "react-bootstrap";
-// import "../../../public/sass/pages/feedback.scss";
-
-
-// const Feedback = () => {
-//   return (
-//     <>
-//       <div className="feedback">
-//         <Container>
-//           <Row>
-//             <div className="inner_parent">
-//                 <div className="content">
-//                     <h3>See what others are achieving through learning
-// </h3>
-
-//                 </div>
-                
-//             </div>
-//           </Row>
-//         </Container>
-//       </div>
-//     </>
-// >>>>>>> Stashed changes
   );
 };
 
