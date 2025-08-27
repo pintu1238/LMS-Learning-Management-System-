@@ -95,23 +95,30 @@
           gap: 10px;
           flex-wrap: wrap;
 
-          .badge_item {
+          ul {
             display: flex;
             align-items: center;
-            gap: 5px;
-            padding: 4px 10px;
-            font-size: 14px;
-            font-weight: 400;
-            color: #878686;
-            background-color: #fff;
-            border: 1px solid #d1d5db;
-            border-radius: 8px;
-            margin: 0; // remove default p tag spacing
+            gap: 10px;
+            li {
+              .badge_item {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 4px 10px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #878686;
+                background-color: #fff;
+                border: 1px solid #d1d5db;
+                border-radius: 8px;
+                margin: 0; // remove default p tag spacing
 
-            .star_icon {
-              color: #d9982f;
-              height: 17px;
-              width: 17px;
+                .star_icon {
+                  color: #d9982f;
+                  height: 17px;
+                  width: 17px;
+                }
+              }
             }
           }
         }

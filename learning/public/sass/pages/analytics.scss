@@ -91,7 +91,9 @@
       width: calc(100% - 700px);
 
       .image_area {
-        height: 667px;
+        // height: 667px;
+        overflow: hidden;
+        height: 699px;
         width: 590px;
         padding: 60px 0px;
         // padding-left: 80px;

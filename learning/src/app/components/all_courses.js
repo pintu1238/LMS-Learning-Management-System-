@@ -144,7 +144,7 @@ const All_courses = () => {
                       ]}
                       spaceBetween={50}
                       slidesPerView={4}
-                      navigation
+                      navigation={true}
                       pagination={{ clickable: true }}
                       // scrollbar={{ draggable: true }}
                       // autoplay={{

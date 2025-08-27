@@ -54,7 +54,7 @@ const Third_sec = () => {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }}
-            pagination={{ clickable: true }}
+            // pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}
             // onSwiper={(swiper) => console.log(swiper)}
             // onSlideChange={() => console.log("slide change")}
@@ -106,15 +106,23 @@ const Third_sec = () => {
                 <div className="card_content">
                   <h4>Full Stack Web Developer</h4>
                   <div className="rating_row">
-                    <div className="star_logo badge_item">
-                      <FontAwesomeIcon
-                        icon={['fas', 'star']}
-                        className="star_icon"
-                      />
-                      4.7
-                    </div>
-                    <p className="badge_item">455K ratings</p>
-                    <p className="badge_item">87.8 total hours</p>
+                    <ul>
+                      <li>
+                        <div className="star_logo badge_item">
+                          <FontAwesomeIcon
+                            icon={['fas', 'star']}
+                            className="star_icon"
+                          />
+                          4.7
+                        </div>
+                      </li>
+                      <li>
+                        <p className="badge_item">455K ratings</p>
+                      </li>
+                      <li>
+                        <p className="badge_item">87.8 total hours</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -133,15 +141,23 @@ const Third_sec = () => {
                 <div className="card_content">
                   <h4>Data Science</h4>
                   <div className="rating_row">
-                    <div className="star_logo badge_item">
-                      <FontAwesomeIcon
-                        icon={['fas', 'star']}
-                        className="star_icon"
-                      />
-                      4.9
-                    </div>
-                    <p className="badge_item">200K ratings</p>
-                    <p className="badge_item">30.8 total hours</p>
+                    <ul>
+                      <li>
+                        <div className="star_logo badge_item">
+                          <FontAwesomeIcon
+                            icon={['fas', 'star']}
+                            className="star_icon"
+                          />
+                          4.7
+                        </div>
+                      </li>
+                      <li>
+                        <p className="badge_item">455K ratings</p>
+                      </li>
+                      <li>
+                        <p className="badge_item">87.8 total hours</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -160,15 +176,23 @@ const Third_sec = () => {
                 <div className="card_content">
                   <h4>Ai Engineer</h4>
                   <div className="rating_row">
-                    <div className="star_logo badge_item">
-                      <FontAwesomeIcon
-                        icon={['fas', 'star']}
-                        className="star_icon"
-                      />
-                      4.7
-                    </div>
-                    <p className="badge_item">855K ratings</p>
-                    <p className="badge_item">87.8 total hours</p>
+                    <ul>
+                      <li>
+                        <div className="star_logo badge_item">
+                          <FontAwesomeIcon
+                            icon={['fas', 'star']}
+                            className="star_icon"
+                          />
+                          4.7
+                        </div>
+                      </li>
+                      <li>
+                        <p className="badge_item">455K ratings</p>
+                      </li>
+                      <li>
+                        <p className="badge_item">87.8 total hours</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -187,15 +211,23 @@ const Third_sec = () => {
                 <div className="card_content">
                   <h4>Cyber Security</h4>
                   <div className="rating_row">
-                    <div className="star_logo badge_item">
-                      <FontAwesomeIcon
-                        icon={['fas', 'star']}
-                        className="star_icon"
-                      />
-                      4.1
-                    </div>
-                    <p className="badge_item">355K ratings</p>
-                    <p className="badge_item">57.8 total hours</p>
+                    <ul>
+                      <li>
+                        <div className="star_logo badge_item">
+                          <FontAwesomeIcon
+                            icon={['fas', 'star']}
+                            className="star_icon"
+                          />
+                          4.7
+                        </div>
+                      </li>
+                      <li>
+                        <p className="badge_item">455K ratings</p>
+                      </li>
+                      <li>
+                        <p className="badge_item">87.8 total hours</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -214,15 +246,23 @@ const Third_sec = () => {
                 <div className="card_content">
                   <h4>Software Developer</h4>
                   <div className="rating_row">
-                    <div className="star_logo badge_item">
-                      <FontAwesomeIcon
-                        icon={['fas', 'star']}
-                        className="star_icon"
-                      />
-                      4.9
-                    </div>
-                    <p className="badge_item">655K ratings</p>
-                    <p className="badge_item">97.8 total hours</p>
+                    <ul>
+                      <li>
+                        <div className="star_logo badge_item">
+                          <FontAwesomeIcon
+                            icon={['fas', 'star']}
+                            className="star_icon"
+                          />
+                          4.7
+                        </div>
+                      </li>
+                      <li>
+                        <p className="badge_item">455K ratings</p>
+                      </li>
+                      <li>
+                        <p className="badge_item">87.8 total hours</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -242,15 +282,26 @@ const Third_sec = () => {
               <div className="card_content">
                 <h4>Data Science</h4>
                 <div className="rating_row">
-                  <div className="star_logo badge_item">
-                    <FontAwesomeIcon
-                      icon={["fas", "star"]}
-                      className="star_icon"
-                    />
-                    4.9
-                  </div>
-                  <p className="badge_item">200K ratings</p>
-                  <p className="badge_item">30.8 total hours</p>
+                  <ul>
+                      <li>
+                       
+                        <div className="star_logo badge_item">
+                          <FontAwesomeIcon
+                            icon={['fas', 'star']}
+                            className="star_icon"
+                          />
+                          4.7
+                        </div>
+                      </li>
+                      <li>
+                       
+                        <p className="badge_item">455K ratings</p>
+                      </li>
+                      <li>
+                        
+                        <p className="badge_item">87.8 total hours</p>
+                      </li>
+                    </ul>
                 </div>
               </div>
             </div>
