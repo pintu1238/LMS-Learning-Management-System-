@@ -11,19 +11,15 @@ import Image from 'next/image';
 import third_sec2 from '../../../public/images/third_sec2.webp';
 import third_sec4 from '../../../public/images/third_sec4.webp';
 import React from 'react';
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
 
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
 const Banner = () => {
   library.add(fab, fas);
 
@@ -34,15 +30,16 @@ const Banner = () => {
           <Row>
             <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={12}>
               <Swiper
-                modules={[Navigation, Autoplay]}
+                modules={[Navigation, Pagination, Scrollbar, Autoplay]}
                 slidesPerView={1}
                 loop={true}
                 autoplay={{
                   delay: 3000,
                   disableOnInteraction: false,
                 }}
-                navigation={true}
-                // pagination={{ clickable: true }}
+                // navigation={true}
+                scrollbar={{ draggable: true }}
+                pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
               >
