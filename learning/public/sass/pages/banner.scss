@@ -1,15 +1,31 @@
 .banner_section {
   position: relative;
   margin-bottom: 70px;
-  .inner_area {
-    // position: relative;
-    padding: 40px 0;
 
-    &::after {
-      content: '';
-      display: block;
-      clear: both;
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: #fff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    color: #000;
+    transition: all 0.3s ease;
+
+    &:after {
+      font-size: 18px;
+      font-weight: bold;
     }
+
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+
+  .swiper-slide {
+    position: relative;
+    min-height: 650px;
 
     &::before {
       content: '';
@@ -18,159 +34,77 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('../../images/back.jpg');
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
-      opacity: 0.2;
       z-index: -1;
     }
 
-    .left_area {
-      float: left;
+    &.slide1::before {
+      background-image: url('/Images/banner_image.jpg');
+    }
 
-      width: 700px;
-      padding-right: 20px;
-      .content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 600px;
-        .text_area {
-          &:hover {
-            background-color: rgb(44, 62, 80);
-            color: white;
+    &.slide2::before {
+      background-image: url('/Images/banner_imagetwo.jpg');
+    }
+  }
+
+  .inner_area {
+    padding: 40px 20px;
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    // text-align: center;
+
+    .content {
+      width: 750px;
+
+      .text_area {
+        padding: 20px 40px;
+        background-color: rgb(44, 62, 80);
+        color: white;
+        border-radius: 12px;
+        .heading {
+          font-size: 42px;
+          .s {
+            color: rgb(103, 121, 176);
           }
-          padding: 20px 40px;
-          background-color: rgb(194, 233, 235);
-          border-radius: 12px;
-          .heading {
-            font-size: 42px;
-            .s {
-              color: rgb(103, 121, 176);
-            }
 
-            .desc {
-              font-size: 22px;
+          .desc {
+            font-size: 22px;
+          }
+        }
+        .buy_area {
+          margin-top: 20px;
+          a {
+            padding: 8px 15px;
+            background-color: blueviolet;
+
+            color: white;
+            border-radius: 15px;
+            text-decoration: none;
+
+            font-size: 18px;
+
+            &:hover {
+              color: blueviolet;
+              background-color: white;
             }
           }
         }
       }
     }
 
-    .right_area {
-      float: right;
-      width: calc(100% - 700px);
-      // background-color: rgb(199, 179, 146);
+    .card_area {
+      width: calc(100% - 750px);
+      color: white;
 
-      .card_area {
+      .video_area {
         border-radius: 15px;
-        padding: 20px;
-        // border: 1px solid blueviolet;
-        border: 1px solid rgb(44, 62, 80);
-        &:hover {
-          // background-color: rgb(179, 138, 191);
-          background-color: rgb(44, 62, 80);
 
-          color: white;
-        }
-        .video_area {
-          border-radius: 15px;
-
-          overflow: hidden;
-          margin-bottom: 20px;
-
-          iframe {
-            transform: scale(1.5);
-          }
-        }
-
-        .down_area {
-          .heading {
-            font-size: 18px;
-          }
-          .desc {
-            font-size: 16px;
-            font-weight: 300;
-          }
-          ul {
-            li {
-              display: inline-block;
-              margin-right: 20px;
-            }
-          }
-          .one {
-            h3 {
-              font-size: 16px;
-              .icon_area {
-                color: gold;
-                margin-right: 10px;
-              }
-            }
-            p {
-              font-size: 16px;
-            }
-          }
-          .two {
-            h3 {
-              font-size: 16px;
-              margin-right: 10px;
-
-              .icon_area {
-                color: rgb(124, 144, 192);
-              }
-            }
-            p {
-              font-size: 16px;
-            }
-          }
-          .three {
-            h3 {
-              font-size: 16px;
-              .icon_area {
-                color: rgb(124, 144, 192);
-              }
-            }
-            p {
-              font-size: 16px;
-            }
-          }
-          .buy_area {
-            margin-bottom: 20px;
-            a {
-              padding: 8px 15px;
-              background-color: blueviolet;
-              display: inline-block;
-              color: white;
-              border-radius: 15px;
-              text-decoration: none;
-              margin-right: 20px;
-              font-size: 18px;
-
-              &:hover {
-                color: blueviolet;
-                background-color: white;
-              }
-            }
-            .price {
-              display: inline-block;
-              margin-right: 10px;
-            }
-            .cut_price {
-              display: inline-block;
-              text-decoration: line-through;
-            }
-          }
-          .enroll_area {
-            h3 {
-              font-size: 14px;
-              .icon_area {
-                color: blueviolet;
-                margin-right: 10px;
-              }
-            }
-          }
-        }
+        overflow: hidden;
+        margin-bottom: 20px;
       }
     }
   }
@@ -194,17 +128,35 @@
 
 /* 1200 desktop only */
 @media (min-width: 1200px) and (max-width: 1299px) {
+  .banner_section {
+    .inner_area {
+      .content {
+        width: 600px;
+      }
+      .card_area {
+        width: calc(100% - 600px);
+      }
+    }
+  }
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   .banner_section {
-    margin-bottom: 50px;
     .inner_area {
-      .left_area {
+      min-height: 600px;
+      .content {
         width: 500px;
+        .text_area {
+          .heading {
+            font-size: 30px;
+          }
+          .desc {
+            font-size: 16px;
+          }
+        }
       }
-      .right_area {
+      .card_area {
         width: calc(100% - 500px);
       }
     }
@@ -214,13 +166,21 @@
 /* Landscape tablets and ipad */
 @media (min-width: 768px) and (max-width: 991px) {
   .banner_section {
-    margin-bottom: 40px;
     .inner_area {
-      .left_area {
-        width: 350px;
+      min-height: 550px;
+      .content {
+        width: 360px;
+        .text_area {
+          .heading {
+            font-size: 30px;
+          }
+          .desc {
+            font-size: 16px;
+          }
+        }
       }
-      .right_area {
-        width: calc(100% - 350px);
+      .card_area {
+        width: calc(100% - 360px);
       }
     }
   }
@@ -229,35 +189,24 @@
 /* Landscape phones and portrait tablets */
 @media (min-width: 576px) and (max-width: 767px) {
   .banner_section {
-    margin-bottom: 30px;
     .inner_area {
-      .left_area {
-        float: none;
-        text-align: center;
+      min-height: 550px;
+
+      display: block;
+      .content {
         width: 100%;
-        .content {
-          text-align: center;
-          min-height: auto;
-          .text_area {
-            padding: 10px 20px;
-            margin-bottom: 20px;
-            .heading {
-              font-size: 30px;
-            }
+        margin-bottom: 20px;
+        .text_area {
+          .heading {
+            font-size: 30px;
+          }
+          .desc {
+            font-size: 16px;
           }
         }
       }
-      .right_area {
-        float: none;
-        // width: calc(100% - 300px);
+      .card_area {
         width: 100%;
-        .card_area {
-          .video_area {
-            iframe {
-              height: 150px;
-            }
-          }
-        }
       }
     }
   }
@@ -266,35 +215,32 @@
 /* Landscape phones and portrait tablets */
 @media (min-width: 361px) and (max-width: 575px) {
   .banner_section {
-    margin-bottom: 25px;
     .inner_area {
-      .left_area {
-        // display: none;
-        float: none;
+      min-height: 450px;
+      display: block;
+      .content {
         width: 100%;
+        margin-bottom: 20px;
+        .text_area {
+          .heading {
+            font-size: 25px;
+          }
+          .desc {
+            font-size: 14px;
+          }
 
-        .content {
-          min-height: auto;
-          .text_area {
-            padding: 10px 20px;
-            margin-bottom: 20px;
-            .heading {
-              font-size: 22px;
+          .buy_area {
+            margin-top: 20px;
+            a {
+              padding: 5px 12px;
+
+              font-size: 16px;
             }
           }
         }
       }
-      .right_area {
-        // width: calc(100% - 300px);
+      .card_area {
         width: 100%;
-        float: none;
-        .card_area {
-          .video_area {
-            iframe {
-              height: 150px;
-            }
-          }
-        }
       }
     }
   }
@@ -303,35 +249,32 @@
 /* Smaller phones */
 @media (max-width: 360px) {
   .banner_section {
-    margin-bottom: 25px;
     .inner_area {
-      .left_area {
-        // display: none;
+      min-height: 450px;
+      display: block;
+      .content {
         width: 100%;
-        float: none;
+        margin-bottom: 20px;
+        .text_area {
+          .heading {
+            font-size: 25px;
+          }
+          .desc {
+            font-size: 14px;
+          }
 
-        .content {
-          min-height: auto;
-          .text_area {
-            padding: 10px 20px;
-            margin-bottom: 20px;
-            .heading {
-              font-size: 22px;
+          .buy_area {
+            margin-top: 20px;
+            a {
+              padding: 5px 12px;
+
+              font-size: 16px;
             }
           }
         }
       }
-      .right_area {
-        // width: calc(100% - 300px);
+      .card_area {
         width: 100%;
-        float: none;
-        .card_area {
-          .video_area {
-            iframe {
-              height: 150px;
-            }
-          }
-        }
       }
     }
   }
@@ -340,35 +283,32 @@
 /* Smaller phones */
 @media (max-width: 320px) {
   .banner_section {
-    margin-bottom: 25px;
     .inner_area {
-      .left_area {
-        // display: none;
-        float: none;
+      min-height: 450px;
+      display: block;
+      .content {
         width: 100%;
+        margin-bottom: 20px;
+        .text_area {
+          .heading {
+            font-size: 25px;
+          }
+          .desc {
+            font-size: 14px;
+          }
 
-        .content {
-          min-height: auto;
-          .text_area {
-            padding-bottom: 10px 20px;
-            margin-bottom: 20px;
-            .heading {
-              font-size: 20px;
+          .buy_area {
+            margin-top: 20px;
+            a {
+              padding: 5px 12px;
+
+              font-size: 16px;
             }
           }
         }
       }
-      .right_area {
-        // width: calc(100% - 300px);
+      .card_area {
         width: 100%;
-        float: none;
-        .card_area {
-          .video_area {
-            iframe {
-              height: 150px;
-            }
-          }
-        }
       }
     }
   }

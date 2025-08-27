@@ -29,6 +29,7 @@
       display: flex;
       align-items: center;
 
+
       &::after {
         content: "";
         display: block;
@@ -41,21 +42,30 @@
         display: flex;
         align-items: center;
 
-        // nav {
-        //   a {
-        //     color: #2c3e50;
-        //     text-decoration: none;
-        //     font-weight: 400;
-        //     font-size: 17px;
-        //     margin-right: 25px;
-        //     transition: all 0.3s ease;
+      .plans_area {
+        a {
+          font-weight: 400;
+          font-size: 18px;
+          color: #2c3e50;
+          text-decoration: none;
+          padding: 8px 12px;
+          border-radius: 4px;
+          margin: 0 20px;
+          transition: all 0.3s ease;
 
-        //     &:hover {
-        //       background-color: #eee6ff;
-        //       color: #6f2dbd;
-        //     }
-        //   }
-        // }
+          &:hover {
+            background-color: #eee6ff;
+            color: #6f2dbd;
+          }
+        }
+      }
+
+      .cart_area {
+        height: 40px;
+        width: 40px;
+
+
+       
 
         nav {
           a {
@@ -513,10 +523,30 @@
       .left_area {
         width: 116px;
 
+
         .logo_area {
           width: 85px;
           height: 31px;
           margin-right: 20px;
+
+        .image_area {
+          margin-right: 12px;
+          height: 40px;
+          width: 110;
+        }
+
+        nav {
+          display: none;
+        }
+
+        .search_box {
+          width: 50px;
+          border: none;
+
+          input {
+            display: none;
+          }
+
         }
       }
 
@@ -710,7 +740,159 @@
 
 /* Smaller phones */
 @media (max-width: 360px) {
+
+
+  .header_section {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+
+    .inner_area {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+
+      &::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .left_area {
+        width: 350px;
+        float: left;
+        display: flex;
+        align-items: center;
+
+        .image_area {
+          margin-right: 12px;
+          height: 40px;
+          width: 110;
+        }
+
+        nav {
+          display: none;
+        }
+
+        .search_box {
+          width: 50px;
+          border: none;
+
+          input {
+            display: none;
+          }
+        }
+      }
+
+      .right_area {
+        width: calc(100% - 350px);
+
+        .menu_area {
+          height: 30px;
+          width: 25px;
+          color: #6f2dbd;
+
+          .three_lines {
+            height: 30px;
+            width: 25px;
+          }
+        }
+        .cart_area {
+          margin-right: 10px;
+        }
+
+        .plans_area,
+        .cart_area,
+        .auth_links {
+          display: none;
+        }
+        .auth_links {
+          a {
+            display: none;
+          }
+        }
+        .plans_area {
+          display: none;
+        }
+      }
+    }
+  }
+
 }
 /* Smaller phones */
 @media (max-width: 320px) {
+
+
+  .header_section {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+
+    .inner_area {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+
+      &::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .left_area {
+        width: 350px;
+        float: left;
+        display: flex;
+        align-items: center;
+
+        .image_area {
+          margin-right: 12px;
+          height: 40px;
+          width: 110;
+        }
+
+        nav {
+          display: none;
+        }
+
+        .search_box {
+          width: 50px;
+          border: none;
+
+          input {
+            display: none;
+          }
+        }
+      }
+
+      .right_area {
+        width: calc(100% - 350px);
+
+        .menu_area {
+          height: 30px;
+          width: 25px;
+          color: #6f2dbd;
+
+          .three_lines {
+            height: 30px;
+            width: 25px;
+          }
+        }
+        .cart_area {
+          margin-right: 10px;
+        }
+
+        .plans_area,
+        .cart_area,
+        .auth_links {
+          display: none;
+        }
+        .auth_links {
+          a {
+            display: none;
+          }
+        }
+        .plans_area {
+          display: none;
+        }
+      }
+    }
+  }
+
 }
