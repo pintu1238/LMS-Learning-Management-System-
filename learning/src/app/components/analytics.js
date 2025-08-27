@@ -1,3 +1,5 @@
+//
+
 'use client';
 
 import React from 'react';
@@ -15,6 +17,7 @@ import analytics_imagetwo from '../../../public/images/analytics_imagetwo.webp';
 import analytics_imagethree from '../../../public/images/analytics_imagethree.webp';
 import analytics_imagefour from '../../../public/images/analytics_imagefour.png';
 import analytics_imagefive from '../../../public/images/analytics_imagefive.png';
+
 const Analytics = () => {
   library.add(fab, fas);
   return (
@@ -28,12 +31,13 @@ const Analytics = () => {
               </div>
 
               <div className="analytics_area">
-                <div className="left_area">
+                {/* Cards Section */}
+                <div className="cards_area">
                   <div className="card">
                     <div className="image_area">
                       <Image
                         src={analytics_imageone}
-                        alt="..."
+                        alt="Hands-on training"
                         width={40}
                         height={40}
                       />
@@ -47,11 +51,12 @@ const Analytics = () => {
                       </p>
                     </div>
                   </div>
+
                   <div className="card">
                     <div className="image_area">
                       <Image
                         src={analytics_imagetwo}
-                        alt="..."
+                        alt="Certification prep"
                         width={40}
                         height={40}
                       />
@@ -63,17 +68,17 @@ const Analytics = () => {
                         Prep for industry-recognized certifications by solving
                         real-world challenges and earn badges along the way.
                       </p>
-
                       <div className="more">
                         <Link href="#">Find Out More</Link>
                       </div>
                     </div>
                   </div>
+
                   <div className="card">
                     <div className="image_area">
                       <Image
                         src={analytics_imagethree}
-                        alt="..."
+                        alt="Insights and analytics"
                         width={40}
                         height={40}
                       />
@@ -88,17 +93,17 @@ const Analytics = () => {
                         Fast-track goals with advanced insights plus a dedicated
                         customer success team to help drive effective learning.
                       </p>
-
                       <div className="more">
                         <Link href="#">Find Out More</Link>
                       </div>
                     </div>
                   </div>
+
                   <div className="card">
                     <div className="image_area">
                       <Image
                         src={analytics_imagefour}
-                        alt="..."
+                        alt="Customizable content"
                         width={40}
                         height={40}
                       />
@@ -113,22 +118,21 @@ const Analytics = () => {
                         Create tailored learning paths for team and organization
                         goals and even host your own content and resources.
                       </p>
-
                       <div className="more">
                         <Link href="#">Find Out More</Link>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="right_area">
-                  <div className="image_area">
-                    <Image
-                      src={analytics_imagefive}
-                      alt="..."
-                      width={610}
-                      height={667}
-                    />
-                  </div>
+
+                {/* Image Section */}
+                <div className="image_area">
+                  <Image
+                    src={analytics_imagefive}
+                    alt="Analytics Preview"
+                    width={610}
+                    height={667}
+                  />
                 </div>
               </div>
             </Col>

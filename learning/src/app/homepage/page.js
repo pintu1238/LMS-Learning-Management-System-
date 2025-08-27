@@ -9,12 +9,11 @@ import All_courses from '../components/all_courses';
 import Analytics from '../components/analytics';
 import Fifth_sec from '../components/fifth_sec';
 import Plan from '../components/plan';
+import Career_banner from '../components/career_banner';
 
 const Homepage = () => {
-  
-
-  return <>
-
+  return (
+    <>
       <Banner />
       <Third_sec />
       <All_courses />
@@ -23,9 +22,9 @@ const Homepage = () => {
 
       <Plan />
       <Feedback />
+      <Career_banner />
     </>
-
-
+  );
 };
 
 export default Homepage;
