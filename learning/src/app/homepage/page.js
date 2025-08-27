@@ -9,7 +9,6 @@ import All_courses from '../components/all_courses';
 import Analytics from '../components/analytics';
 import Fifth_sec from '../components/fifth_sec';
 import Plan from '../components/plan';
-import Career_banner from '../components/career_banner';
 
 const Homepage = () => {
   return (
@@ -22,7 +21,6 @@ const Homepage = () => {
 
       <Plan />
       <Feedback />
-      <Career_banner />
     </>
   );
 };

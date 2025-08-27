@@ -1,8 +1,9 @@
 .career_banner {
   background-color: orange;
   .inner_area {
-    min-height: 400px;
     position: relative;
+    padding: 40px 0;
+    min-height: 400px;
 
     &::after {
       content: '';
@@ -11,9 +12,12 @@
     }
 
     .left_area {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
       background-color: white;
       float: left;
       width: 760px;
+      height: 100%;
       padding-right: 30px;
 
       .course_detail_card {
@@ -125,14 +129,18 @@
     }
 
     .right_area {
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
       background-color: white;
       float: right;
-      height: 400px;
+      // height: 400px;
+      height: 100%;
       width: calc(100% - 760px);
       // border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 40px;
 
       .image_area {
         width: 100%;
@@ -262,6 +270,7 @@
 //     }
 
 //     .image_area {
+//       background-color: white;
 //       width: calc(100% - 700px);
 //       border-radius: 12px;
 //       overflow: hidden;
