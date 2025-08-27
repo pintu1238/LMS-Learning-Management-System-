@@ -1,0 +1,37 @@
+section.loginSection {
+    div.loginArea {
+        min-height: 700px;
+        padding: 65px 0;
+
+        div.left {
+            width: 650px;
+            background-color: aqua;
+            float: left;
+            display: flex;
+            justify-content: end;
+
+            div.left_img {
+                height: 500px;
+                width: 500px;
+            }
+        }
+
+        div.right {
+            width: calc(100% - 650px);
+            float: right;
+
+            div.contant {
+                form {
+                    h1.auth_form_heading {
+                        font-family: var(--font-stack-heading);
+                        font-weight: 700;
+                        line-height: 1.2;
+                        letter-spacing: 0;
+                        font-size: clamp(2.4rem, calc(2.4rem + (3.2 - 2.4) * calc((100vw - 36rem) / (144 - 36))), 3.2rem);
+                        max-inline-size: 36em;
+                    }
+                }
+            }
+        }
+    }
+}
