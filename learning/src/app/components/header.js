@@ -1,17 +1,25 @@
+
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import "../../../public/sass/pages/header.scss";
 import { Col, Container, Row } from "react-bootstrap";
+
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-// import { far } from '@fortawesome/free-brands-svg-icons';
-const Header = () => {
-  library.add(fab, fas);
 
+import {
+  faChevronRight,
+  faCartPlus,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
+import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
+
+// Add specific icons to the library
+library.add(faChevronRight, faCartPlus, faBars, faSearchengin);
+
+const Header = () => {
   // State to control the visibility of the main Explore menu
   const [showExploreMenu, setShowExploreMenu] = useState(false);
   // State to control the visibility of the "Development" sub-menu
@@ -20,7 +28,6 @@ const Header = () => {
   const [showCertSubMenu, setShowCertSubMenu] = useState(false);
   const [showCareerSubMenu, setShowCareerSubMenu] = useState(false);
   const [showBusinessSubMenu, setShowBusinessSubMenu] = useState(false);
-
 
   return (
     <>
@@ -59,12 +66,6 @@ const Header = () => {
                               <ul className="categories-list">
                                 {/* Explore by Goal */}
                                 <li className="category-item">
-                                  {/* <div className="item-title">
-                                    <span>Explore by Goal</span>
-                                    <FontAwesomeIcon
-                                      icon={["fas", "chevron-right"]}
-                                    />
-                                  </div> */}
                                   <ul className="sub-categories">
                                     {/* AI with Stable Hover */}
                                     <li
@@ -194,7 +195,6 @@ const Header = () => {
                                                 Cisco CCNA Certification
                                               </Link>
                                             </li>
-                                            
                                           </ul>
                                         </div>
                                       )}
@@ -225,7 +225,7 @@ const Header = () => {
                                         <li>
                                           <Link href="#">Web Development</Link>
                                         </li>
-                                        
+
                                         <li>
                                           <Link href="#">
                                             Mobile Development
@@ -241,13 +241,11 @@ const Header = () => {
                                             Software Engineering
                                           </Link>
                                         </li>
-                                        
                                       </ul>
                                     </div>
                                   )}
                                 </li>
 
-                                
                                 {/* Business with Stable Hover */}
                                 <li
                                   className="category-item"
@@ -334,6 +332,25 @@ const Header = () => {
                       <li>
                         <Link href="#">Sign up</Link>
                       </li>
+
+{/* ***************************************************************** */}
+                      {/* <div className="after_login">
+                        <div className="logo_pic">
+                          <Image
+                            src="/images/logo.png"
+                            alt="Logo"
+                            width={120}
+                            height={50}
+                          />
+                        </div>
+                      </div> */}
+
+{/* ***************************************************************** */}
+
+
+
+
+
                     </ul>
                   </div>
                 </div>
@@ -342,65 +359,6 @@ const Header = () => {
           </Row>
         </Container>
       </section>
-
-      {/* <section className="header_section">
-        <Container>
-          <Row>
-            <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={12}>
-              <div className="inner_area">
-                <div className="left_area">
-                  <div className="image_area">
-                    <Image
-                      src="/images/logo.png"
-                      alt="Logo"
-                      width={120}
-                      height={50}
-                    />
-                  </div>
-
-                  <nav>
-                    <Link href="#">Explore</Link>
-                  </nav>
-
-                  <div className="search_box">
-                    <FontAwesomeIcon icon={['fab', 'searchengin']} />
-                    <input type="text" placeholder="Search for anything" />
-                  </div>
-                </div>
-
-                <div className="right_area">
-                  <div className="cart_area">
-                    <Link href="#">
-                      <FontAwesomeIcon
-                        icon={['fas', 'cart-plus']}
-                        className="cart_logo"
-                      />
-                    </Link>
-                  </div>
-                  <nav className="plans_area">
-                    <Link href="#">Plans & Pricing</Link>
-                  </nav>
-
-                  <div className="menu_area">
-                    <FontAwesomeIcon
-                      icon={['fas', 'bars']}
-                      className="three_lines"
-                    />
-                  </div>
-                  <ul className="auth_links">
-                    <li>
-                      <Link href="#">Log in</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Sign up</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
     </>
   );
 };

@@ -1,16 +1,15 @@
+
+
+/* Base Header Section Styles */
 .header_section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: visible;
+
   .inner_area {
     display: flex;
     align-items: center;
     padding: 15px 15px;
-
-    &::after {
-      content: "";
-      display: block;
-      clear: both;
-    }
+    position: relative; // Position relative for the dropdown menu
 
     .left_area {
       width: 140px;
@@ -20,52 +19,20 @@
         margin-right: 20px;
         height: 43px;
         width: 117px;
-        margin-right: 20px;
+        cursor: pointer;
       }
     }
+
     .right_area {
-      float: right;
-      width: calc(100% - 117px);
+      width: calc(100% - 140px);
       display: flex;
       align-items: center;
-
-
-      &::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
+      justify-content: space-between;
 
       .left_of_right {
-        float: left;
-        width: 830px;
         display: flex;
         align-items: center;
-
-      .plans_area {
-        a {
-          font-weight: 400;
-          font-size: 18px;
-          color: #2c3e50;
-          text-decoration: none;
-          padding: 8px 12px;
-          border-radius: 4px;
-          margin: 0 20px;
-          transition: all 0.3s ease;
-
-          &:hover {
-            background-color: #eee6ff;
-            color: #6f2dbd;
-          }
-        }
-      }
-
-      .cart_area {
-        height: 40px;
-        width: 40px;
-
-
-       
+        flex-grow: 1;
 
         nav {
           a {
@@ -82,7 +49,7 @@
             }
           }
 
-       
+          /* New: Explore Dropdown Menu Styles */
           .explore-menu-container {
             position: relative;
             display: inline-block;
@@ -96,7 +63,7 @@
               border-radius: 8px;
               box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
               z-index: 1000;
-              min-width: 700px; 
+              min-width: 600px; /* Adjust as needed */
               display: flex;
               padding: 20px;
               border: 1px solid #ddd;
@@ -176,9 +143,6 @@
                       color: #2c3e50;
                       padding: 8px 12px;
                       display: block;
-                      // white-space: nowrap;
-                      width: 100%;
-                      box-sizing: border-box;
                       margin-right: 0;
                       border-radius: 4px;
 
@@ -193,12 +157,6 @@
             }
           }
         }
-
-
-
-
-
-
 
         .search_box {
           border: 1px solid #ccc;
@@ -217,7 +175,6 @@
 
           input {
             display: inline-block;
-
             border: none;
             outline: none;
             background: transparent;
@@ -233,7 +190,6 @@
       }
 
       .right_of_right {
-        width: calc(100% - 830px);
         float: right;
         display: flex;
         align-items: center;
@@ -259,8 +215,8 @@
         }
 
         .cart_area {
-          height: 30px;
-          width: 30px;
+          height: 26px;
+          width: 26px;
           margin-right: 40px;
 
           .cart_logo {
@@ -277,7 +233,23 @@
           }
         }
 
+        .menu_area {
+          display: none;
+          height: 30px;
+          width: 30px;
+          margin-left: 20px;
+          .three_lines {
+            color: #6f2dbd;
+            height: 100%;
+            width: 100%;
+          }
+        }
+
         .auth_links {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
           li {
             display: inline-block;
             margin-right: 20px;
@@ -290,7 +262,6 @@
               text-decoration: none;
               padding: 8px 12px;
               border-radius: 4px;
-
               border: 1px solid #6f2dbd;
               transition: all 0.3s ease;
 
@@ -458,8 +429,8 @@
           width: calc(100% - 610px);
 
           .cart_area {
-            width: 27px;
-            height: 27px;
+            width: 25px;
+            height: 25px;
           }
         }
       }
@@ -502,8 +473,12 @@
           width: calc(100% - 400px);
 
           .cart_area {
-            width: 27px;
-            height: 27px;
+            width: 23px;
+            height: 23px;
+          }
+
+          .auth_links li a {
+            padding: 7px 9px;
           }
         }
       }
@@ -515,7 +490,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .menu_area {
     display: block;
-    margin-left: 225px;
+    // margin-left: 225px;
   }
 
   .header_section {
@@ -523,30 +498,10 @@
       .left_area {
         width: 116px;
 
-
         .logo_area {
-          width: 85px;
-          height: 31px;
+          width: 75px;
+          height: 27px;
           margin-right: 20px;
-
-        .image_area {
-          margin-right: 12px;
-          height: 40px;
-          width: 110;
-        }
-
-        nav {
-          display: none;
-        }
-
-        .search_box {
-          width: 50px;
-          border: none;
-
-          input {
-            display: none;
-          }
-
         }
       }
 
@@ -556,27 +511,28 @@
           width: 259px;
 
           nav {
-            a {
-              display: none;
-            }
+            display: none;
+            // a {
+            //   display: none;
+            // }
           }
 
-          .search_box {
-            width: 50px;
-            border: none;
+          
 
-            .search_icon {
-              width: 20px;
-              height: 20px;
-              // margin-right: 8px;
-              margin-left: 218px;
-            }
+            .search_box {
+              border: none;
+              width: 100%;
+              display: flex;
+              justify-content: end;
+            
 
             input {
               display: none;
             }
-          }
+          
         }
+        }
+      }
 
         .right_of_right {
           width: calc(100% - 259px);
@@ -598,7 +554,8 @@
       }
     }
   }
-}
+
+
 /* Landscape phones and portrait tablets */
 @media (min-width: 576px) and (max-width: 767px) {
   .menu_area {
@@ -636,7 +593,6 @@
             .search_icon {
               width: 20px;
               height: 20px;
-              // margin-right: 8px;
               margin-left: 120px;
             }
 
@@ -706,7 +662,6 @@
             .search_icon {
               width: 20px;
               height: 20px;
-              // margin-right: 8px;
               margin-left: 26px;
             }
 
@@ -736,163 +691,4 @@
       }
     }
   }
-}
-
-/* Smaller phones */
-@media (max-width: 360px) {
-
-
-  .header_section {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-
-    .inner_area {
-      display: flex;
-      align-items: center;
-      padding: 12px 0;
-
-      &::after {
-        content: '';
-        display: block;
-        clear: both;
-      }
-
-      .left_area {
-        width: 350px;
-        float: left;
-        display: flex;
-        align-items: center;
-
-        .image_area {
-          margin-right: 12px;
-          height: 40px;
-          width: 110;
-        }
-
-        nav {
-          display: none;
-        }
-
-        .search_box {
-          width: 50px;
-          border: none;
-
-          input {
-            display: none;
-          }
-        }
-      }
-
-      .right_area {
-        width: calc(100% - 350px);
-
-        .menu_area {
-          height: 30px;
-          width: 25px;
-          color: #6f2dbd;
-
-          .three_lines {
-            height: 30px;
-            width: 25px;
-          }
-        }
-        .cart_area {
-          margin-right: 10px;
-        }
-
-        .plans_area,
-        .cart_area,
-        .auth_links {
-          display: none;
-        }
-        .auth_links {
-          a {
-            display: none;
-          }
-        }
-        .plans_area {
-          display: none;
-        }
-      }
-    }
-  }
-
-}
-/* Smaller phones */
-@media (max-width: 320px) {
-
-
-  .header_section {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-
-    .inner_area {
-      display: flex;
-      align-items: center;
-      padding: 12px 0;
-
-      &::after {
-        content: '';
-        display: block;
-        clear: both;
-      }
-
-      .left_area {
-        width: 350px;
-        float: left;
-        display: flex;
-        align-items: center;
-
-        .image_area {
-          margin-right: 12px;
-          height: 40px;
-          width: 110;
-        }
-
-        nav {
-          display: none;
-        }
-
-        .search_box {
-          width: 50px;
-          border: none;
-
-          input {
-            display: none;
-          }
-        }
-      }
-
-      .right_area {
-        width: calc(100% - 350px);
-
-        .menu_area {
-          height: 30px;
-          width: 25px;
-          color: #6f2dbd;
-
-          .three_lines {
-            height: 30px;
-            width: 25px;
-          }
-        }
-        .cart_area {
-          margin-right: 10px;
-        }
-
-        .plans_area,
-        .cart_area,
-        .auth_links {
-          display: none;
-        }
-        .auth_links {
-          a {
-            display: none;
-          }
-        }
-        .plans_area {
-          display: none;
-        }
-      }
-    }
-  }
-
 }
