@@ -1,0 +1,56 @@
+.banner_section {
+  max-height: 500px;
+  img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+
+
+  .baner_area {
+    display: flex;
+    align-items: center;
+
+    .left_area {
+      float: left;
+      width: 500px;
+
+
+      h1.text {
+        font-size: 50px;
+        font-weight: 700;
+        color: #111;
+
+      }
+    }
+
+    .right_area {
+      float: right;
+      width: calc(100% - 500px);
+
+
+      .img_area{
+        height:100%;
+        width: 600px;
+      }
+    }
+
+  }
+
+  // .second{
+  //   background-color:#111;
+  //   padding: 20px;
+  //   .para{
+  //     text-align: center;
+  //     .log{
+  //       color: #fff;
+  //       font-size: 20px;
+  //       font-weight: 400;
+
+  //     }
+  //   }
+  // }
+
+
+}

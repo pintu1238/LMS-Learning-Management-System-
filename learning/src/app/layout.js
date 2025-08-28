@@ -4,10 +4,10 @@ import './globals.css';
 import '../../public/sass/base/helper.scss';
 import '../../public/sass/base/reset.scss';
 
-import Header from './components/header';
 import Footer from './components/footer';
 
 import { Geist } from 'next/font/google';
+import Header from './components/header';
 // Geist font import
 
 const geistSans = Geist({
@@ -25,7 +25,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={geistSans.className}>
         <Header />
-
         {children}
         <Footer />
       </body>
