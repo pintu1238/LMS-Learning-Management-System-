@@ -6,18 +6,21 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {
   faChevronRight,
   faCartPlus,
   faBars,
+  fas,
 } from "@fortawesome/free-solid-svg-icons";
 import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
 
 // Add specific icons to the library
-library.add(faChevronRight, faCartPlus, faBars, faSearchengin);
+library.add(faChevronRight, faCartPlus, faBars, faSearchengin, fas);
 
 const Header = () => {
   // State to control the visibility of the main Explore menu
@@ -302,7 +305,7 @@ const Header = () => {
                       <input
                         type="text"
                         placeholder="Search for anything"
-                        // className="search_icon"
+                      // className="search_icon"
                       />
                     </div>
                   </div>
@@ -318,13 +321,6 @@ const Header = () => {
                         />
                       </Link>
                     </div>
-
-                    <div className="menu_area">
-                      <FontAwesomeIcon
-                        icon={["fas", "bars"]}
-                        className="three_lines"
-                      />
-                    </div>
                     <ul className="auth_links">
                       <li>
                         <Link href="#">Log in</Link>
@@ -332,26 +328,17 @@ const Header = () => {
                       <li>
                         <Link href="#">Sign up</Link>
                       </li>
-
-{/* ***************************************************************** */}
-                      {/* <div className="after_login">
-                        <div className="logo_pic">
-                          <Image
-                            src="/images/logo.png"
-                            alt="Logo"
-                            width={120}
-                            height={50}
-                          />
-                        </div>
-                      </div> */}
-
-{/* ***************************************************************** */}
-
-
-
-
-
                     </ul>
+                    <div className="user_account">
+                      <FontAwesomeIcon
+                        icon={["fas", "user"]}
+                        className="user_icon"
+                      />
+                    </div>
+                    <div className="bars">
+                      <FontAwesomeIcon icon={["fas", "bars"]} 
+                        className="bar_icons"/>
+                    </div>
                   </div>
                 </div>
               </div>

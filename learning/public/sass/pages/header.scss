@@ -1,6 +1,3 @@
-
-
-/* Base Header Section Styles */
 .header_section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: visible;
@@ -9,7 +6,7 @@
     display: flex;
     align-items: center;
     padding: 15px 15px;
-    position: relative; // Position relative for the dropdown menu
+    position: relative;
 
     .left_area {
       width: 140px;
@@ -27,7 +24,7 @@
       width: calc(100% - 140px);
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      // justify-content: space-between;
 
       .left_of_right {
         display: flex;
@@ -63,7 +60,8 @@
               border-radius: 8px;
               box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
               z-index: 1000;
-              min-width: 600px; /* Adjust as needed */
+              min-width: 600px;
+              /* Adjust as needed */
               display: flex;
               padding: 20px;
               border: 1px solid #ddd;
@@ -238,6 +236,7 @@
           height: 30px;
           width: 30px;
           margin-left: 20px;
+
           .three_lines {
             color: #6f2dbd;
             height: 100%;
@@ -270,6 +269,7 @@
                 color: #6f2dbd;
               }
             }
+
             &:last-child {
               margin-right: 0;
             }
@@ -280,25 +280,27 @@
   }
 }
 
-/* 1680 desktop */
-@media (min-width: 1680px) and (max-width: 1919px) {
-  .menu_area {
-    display: none;
-  }
+.user_account {
+  display: none;
 }
 
-/* 1600 desktop */
-@media (min-width: 1600px) and (max-width: 1679px) {
-  .menu_area {
-    display: none;
-  }
+.bars {
+  display: none;
 }
+
+.header_section .inner_area {
+  // align-items: center;
+  padding: 15px 0;
+}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
 
 /* Above 1400 and Below 1599 Desktop*/
 @media (min-width: 1400px) and (max-width: 1599px) {
-  .menu_area {
-    display: none;
-  }
 
   .header_section {
     .inner_area {
@@ -314,6 +316,7 @@
 
       .right_area {
         width: calc(100% - 126px);
+
         .left_of_right {
           width: 765px;
 
@@ -344,9 +347,6 @@
 
 /* 1300 desktop only */
 @media (min-width: 1300px) and (max-width: 1399px) {
-  .menu_area {
-    display: none;
-  }
 
   .header_section {
     .inner_area {
@@ -362,6 +362,7 @@
 
       .right_area {
         width: calc(100% - 126px);
+
         .left_of_right {
           width: 660px;
 
@@ -392,9 +393,6 @@
 
 /* 1200 desktop only */
 @media (min-width: 1200px) and (max-width: 1299px) {
-  .menu_area {
-    display: none;
-  }
 
   .header_section {
     .inner_area {
@@ -410,6 +408,7 @@
 
       .right_area {
         width: calc(100% - 116px);
+
         .left_of_right {
           width: 610px;
 
@@ -440,10 +439,6 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .menu_area {
-    display: none;
-  }
-
   .header_section {
     .inner_area {
       .left_area {
@@ -458,6 +453,7 @@
 
       .right_area {
         width: calc(100% - 116px);
+
         .left_of_right {
           width: 400px;
 
@@ -488,207 +484,402 @@
 
 /* Landscape tablets and ipad */
 @media (min-width: 768px) and (max-width: 991px) {
-  .menu_area {
-    display: block;
-    // margin-left: 225px;
+  .header_section .inner_area .right_area .right_of_right .plans_area {
+    display: none;
   }
 
-  .header_section {
-    .inner_area {
-      .left_area {
-        width: 116px;
+  .header_section .inner_area .right_area .right_of_right .auth_links {
+    display: none;
+  }
 
-        .logo_area {
-          width: 75px;
-          height: 27px;
-          margin-right: 20px;
+  .inner_area {
+    .left_area {
+      width: 116px;
+
+      .logo_area {
+        width: 85px;
+        height: 31px;
+        margin-right: 20px;
+      }
+    }
+
+    .right_area {
+      display: flex;
+      align-items: center;
+      width: calc(100% - 116px);
+
+      .left_of_right {
+        width: 450px;
+
+        nav {
+          a {
+            margin-right: 29px;
+            font-size: 17px;
+          }
         }
       }
 
-      .right_area {
-        width: calc(100% - 116px);
-        .left_of_right {
-          width: 259px;
+      .right_of_right {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 450px);
 
-          nav {
-            display: none;
-            // a {
-            //   display: none;
-            // }
-          }
-
-          
-
-            .search_box {
-              border: none;
-              width: 100%;
-              display: flex;
-              justify-content: end;
-            
-
-            input {
-              display: none;
-            }
-          
+        .cart_area {
+          width: 23px;
+          height: 23px;
         }
-        }
-      }
 
-        .right_of_right {
-          width: calc(100% - 259px);
-
-          .plans_area a {
-            display: none;
-          }
-
-          .cart_area {
-            width: 22px;
-            height: 22px;
-          }
-          .auth_links {
-            a {
-              display: none;
-            }
-          }
+        .auth_links li a {
+          padding: 7px 9px;
         }
       }
     }
   }
 
+  .user_account {
+    display: block;
+
+    .user_icon {
+      font-size: 18px;
+      color: black;
+    }
+  }
+
+  .header_section .inner_area .left_area .logo_area {
+    width: 100px;
+    height: 36px;
+  }
+
+  .header_section .inner_area .left_area {
+    width: 130px;
+  }
+
+  .header_section .inner_area .right_area {
+    align-items: center;
+    width: calc(100% - 130px);
+  }
+}
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 576px) and (max-width: 767px) {
-  .menu_area {
-    display: block;
-    margin-left: 140px;
+  .header_section .inner_area .right_area .right_of_right .plans_area {
+    display: none;
   }
 
-  .header_section {
-    .inner_area {
-      .left_area {
-        width: 116px;
+  .header_section .inner_area .left_area {
+    width: 115px;
+  }
 
-        .logo_area {
-          width: 85px;
-          height: 31px;
-          margin-right: 20px;
+  .header_section .inner_area .right_area {
+    align-items: center;
+    width: calc(100% - 115px);
+  }
+
+  .header_section .inner_area .right_area .right_of_right .auth_links {
+    display: none;
+  }
+
+  .inner_area {
+    .left_area {
+      width: 116px;
+
+      .logo_area {
+        width: 85px;
+        height: 31px;
+        margin-right: 20px;
+      }
+    }
+
+    .right_area {
+      display: flex;
+      align-items: center;
+      width: calc(100% - 116px);
+
+      .left_of_right {
+        width: 450px;
+
+        nav {
+          a {
+            margin-right: 29px;
+            font-size: 17px;
+          }
         }
       }
 
-      .right_area {
-        width: calc(100% - 116px);
-        .left_of_right {
-          width: 150px;
+      .right_of_right {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 450px);
 
-          nav {
-            a {
-              display: none;
-            }
-          }
-
-          .search_box {
-            width: 50px;
-            border: none;
-
-            .search_icon {
-              width: 20px;
-              height: 20px;
-              margin-left: 120px;
-            }
-
-            input {
-              display: none;
-            }
-          }
+        .cart_area {
+          width: 23px;
+          height: 23px;
         }
 
-        .right_of_right {
-          width: calc(100% - 150px);
-
-          .plans_area a {
-            display: none;
-          }
-
-          .cart_area {
-            width: 22px;
-            height: 22px;
-          }
-          .auth_links {
-            a {
-              display: none;
-            }
-          }
+        .auth_links li a {
+          padding: 7px 9px;
         }
       }
     }
+  }
+
+  .user_account {
+    display: block;
+
+    .user_icon {
+      font-size: 18px;
+      color: black;
+    }
+  }
+
+  .header_section .inner_area .right_area .left_of_right nav {
+    display: none;
+  }
+
+  .header_section .inner_area .right_area .right_of_right .user_account {
+    display: none;
+  }
+
+  .header_section .inner_area .right_area .right_of_right .cart_area {
+    display: none;
+  }
+
+  .header_section .inner_area .left_area .logo_area {
+    width: 100px;
+    height: 36px;
+  }
+
+  .bars {
+    display: block;
+    font-size: 20px;
+  }
+
+  .header_section .inner_area .right_area .left_of_right .search_box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: calc(100% - 50px);
   }
 }
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 361px) and (max-width: 575px) {
-  .menu_area {
-    display: block;
-    margin-left: 30px;
+  .header_section .inner_area .right_area .right_of_right .plans_area {
+    display: none;
   }
 
-  .header_section {
-    .inner_area {
-      padding: 7px;
-      .left_area {
-        width: 100px;
+  .header_section .inner_area .left_area {
+    width: 115px;
+  }
 
-        .logo_area {
-          width: 75px;
-          height: 27px;
-          margin-right: 20px;
+  .header_section .inner_area .right_area {
+    align-items: center;
+    width: calc(100% - 115px);
+  }
+
+  .header_section .inner_area .right_area .right_of_right .auth_links {
+    display: none;
+  }
+
+  .inner_area {
+    .left_area {
+      width: 116px;
+
+      .logo_area {
+        width: 85px;
+        height: 31px;
+        margin-right: 20px;
+      }
+    }
+
+    .right_area {
+      display: flex;
+      align-items: center;
+      width: calc(100% - 116px);
+
+      .left_of_right {
+        width: 450px;
+
+        nav {
+          a {
+            margin-right: 29px;
+            font-size: 17px;
+          }
         }
       }
 
-      .right_area {
-        width: calc(100% - 116px);
-        .left_of_right {
-          width: 80px;
+      .right_of_right {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 450px);
 
-          nav {
-            a {
-              display: none;
-            }
-          }
-
-          .search_box {
-            width: 50px;
-            border: none;
-
-            .search_icon {
-              width: 20px;
-              height: 20px;
-              margin-left: 26px;
-            }
-
-            input {
-              display: none;
-            }
-          }
+        .cart_area {
+          width: 23px;
+          height: 23px;
         }
 
-        .right_of_right {
-          width: calc(100% - 80px);
-
-          .plans_area a {
-            display: none;
-          }
-
-          .cart_area {
-            width: 22px;
-            height: 22px;
-          }
-          .auth_links {
-            a {
-              display: none;
-            }
-          }
+        .auth_links li a {
+          padding: 7px 9px;
         }
       }
     }
   }
+
+  .user_account {
+    display: block;
+
+    .user_icon {
+      font-size: 18px;
+      color: black;
+    }
+  }
+
+  .header_section .inner_area .right_area .left_of_right nav {
+    display: none;
+  }
+
+  .header_section .inner_area .right_area .right_of_right .user_account {
+    display: none;
+  }
+
+  .header_section .inner_area .right_area .right_of_right .cart_area {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+    font-size: 20px;
+  }
+
+  .header_section .inner_area .right_area .left_of_right .search_box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: calc(100% - 50px);
+  }
+
+  .header_section .inner_area .left_area .logo_area {
+    width: 73px;
+    height: 27px;
+  }
+
+  .header_section .inner_area .left_area {
+    width: 90px;
+  }
+
+  .header_section .inner_area .right_area {
+    align-items: center;
+    width: calc(100% - 90px);
+  }
+}
+
+@media (max-width: 360px) {
+  .header_section .inner_area .right_area .right_of_right .plans_area {
+    display: none;
+  }
+
+  .header_section .inner_area .left_area {
+    width: 115px;
+  }
+
+  .header_section .inner_area .right_area {
+    align-items: center;
+    width: calc(100% - 115px);
+  }
+
+  .header_section .inner_area .right_area .right_of_right .auth_links {
+    display: none;
+  }
+
+  .inner_area {
+    .left_area {
+      width: 116px;
+
+      .logo_area {
+        width: 85px;
+        height: 31px;
+        margin-right: 20px;
+      }
+    }
+
+    .right_area {
+      display: flex;
+      align-items: center;
+      width: calc(100% - 116px);
+
+      .left_of_right {
+        width: 450px;
+
+        nav {
+          a {
+            margin-right: 29px;
+            font-size: 17px;
+          }
+        }
+      }
+
+      .right_of_right {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 450px);
+
+        .cart_area {
+          width: 23px;
+          height: 23px;
+        }
+
+        .auth_links li a {
+          padding: 7px 9px;
+        }
+      }
+    }
+  }
+
+  .user_account {
+    display: block;
+
+    .user_icon {
+      font-size: 18px;
+      color: black;
+    }
+  }
+
+  .header_section .inner_area .right_area .left_of_right nav {
+    display: none;
+  }
+
+  .header_section .inner_area .right_area .right_of_right .user_account {
+    display: none;
+  }
+
+  .header_section .inner_area .right_area .right_of_right .cart_area {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+    font-size: 20px;
+  }
+
+  .header_section .inner_area .right_area .left_of_right .search_box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: calc(100% - 50px);
+  }
+
+  .header_section .inner_area .left_area .logo_area {
+    width: 73px;
+    height: 27px;
+  }
+
+  .header_section .inner_area .left_area {
+    width: 90px;
+  }
+
+  .header_section .inner_area .right_area {
+    align-items: center;
+    width: calc(100% - 90px);
+  }
+
 }
