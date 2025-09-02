@@ -445,36 +445,63 @@ const Skill_content = () => {
               </div>
 
               {/* <div className="right"> */}
-                <div className="right">
-                  <div className="course-container">
-                    <p className="premium-info">
-                      This Premium course is included in plans
-                    </p>
+              <div className="right">
+                <div className="course-container">
+                  <div className="video-preview">
+                    <iframe
+                      width="100%"
+                      height="200"
+                      src="https://www.youtube.com/embed/rfscVS0vtbw"
+                      title="Python Course Preview"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                    <div className="preview-overlay">Preview this course</div>
+                  </div>
 
-                    <h3>Subscribe to Udemy’s top courses</h3>
-                    <p className="description">
-                      Get this course, plus 26,000+ of our top-rated courses,
-                      with Personal Plan.
-                      <Link href="#"> Learn more</Link>
-                    </p>
+                  <p className="premium-info">
+                    This Premium course is included in plans
+                  </p>
 
-                    <Link href="#" className="btn subscribe">
-                      Start subscription
-                    </Link>
-                    <p className="price-note">
-                      Starting at <span className="old-price">₹500</span>{" "}
-                      <span className="new-price">₹375</span> per month
-                    </p>
-                    <p className="cancel-note">Cancel anytime</p>
+                  <h3>Subscribe to Udemy’s top courses</h3>
+                  <p className="description">
+                    Get this course, plus 26,000+ of our top-rated courses, with
+                    Personal Plan.
+                    <a href="#"> Learn more</a>
+                  </p>
 
-                    <div className="or-separator">or</div>
+                  <Link href="#" className="btn subscribe">
+                    Start subscription
+                  </Link>
 
-                    <h2 className="price">₹3,109</h2>
-                    <Link href="#" className="btn add-to-cart">Add to cart</Link>
-                    <Link href="#" className="btn buy-now">Buy now</Link>
+                  <p className="price-note">
+                    Starting at <span className="old-price">₹500</span>{" "}
+                    <span className="new-price">₹375</span> per month
+                  </p>
+                  <p className="cancel-note">Cancel anytime</p>
+
+                  <div className="or-separator">or</div>
+
+                  <h2 className="price">₹3,109</h2>
+                  <Link href="#" className="btn add-to-cart">
+                    Add to cart
+                  </Link>
+                  <Link href="#" className="btn buy-now">
+                    Buy now
+                  </Link>
+
+                  <div className="applied-coupon">
+                    <p>KEEPLEARNING is applied using Udemy Coupon</p>
+
+                    <div className="coupon-box">
+                      <input type="text" placeholder="Enter Coupon" />
+                      <Link href="#">Apply</Link>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
             {/* </div> */}
           </Col>
         </Row>
