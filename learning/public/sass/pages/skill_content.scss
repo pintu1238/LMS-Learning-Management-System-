@@ -2,9 +2,12 @@
   margin-top: 30px;
 
   .inner_parent {
+    position: relative;
+    margin-bottom: 60px;
     .left {
       float: left;
-      width: 800px;
+      // width: 800px;
+      width: 60%;
 
       .learn_box {
         border: 1px solid #d1d7dc;
@@ -12,6 +15,7 @@
         border-radius: 6px;
         background-color: #fff;
         margin-bottom: 60px;
+        margin-top: 40px;
 
         h3 {
           font-size: 20px;
@@ -156,6 +160,7 @@
       .course_content {
         padding: 20px;
         background: #fff;
+        margin-bottom: 60px;
 
         .title {
           font-size: 22px;
@@ -352,8 +357,12 @@
 
     .right {
       float: right;
-      width: calc(100% - 800px);
+      // width: calc(100% - 800px);
+      width: 40%;
       padding-left: 50px;
+
+      position: sticky;
+      top: 450px; // upar se distance
 
       .course-container {
         padding: 12px 15px;
@@ -485,6 +494,7 @@
             input {
               padding: 7px 15px;
               margin-right: 25px;
+              max-width: 100px;
             }
 
             a {
