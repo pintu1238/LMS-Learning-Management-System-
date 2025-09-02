@@ -17,25 +17,25 @@ const Skill_banner = () => {
                 {/* Breadcrumbs */}
                 <div className="breadcrumbs">
                   <ul>
-                    <li><Link href="#">Office Productivity</Link> &gt;</li>
-                    <li><Link href="#">Other Office Productivity</Link> &gt;</li>
-                    <li><Link href="#">ChatGPT</Link></li>
+                    <li><Link href="#">Deevelopment</Link> &gt;</li>
+                    <li><Link href="#">Programming Language</Link> &gt;</li>
+                    <li><Link href="#">Python</Link></li>
                   </ul>
                 </div>
 
                 {/* Course Title */}
-                <h3>The Complete AI Guide: Learn ChatGPT, Generative AI & More</h3>
+                <h3>100 Days of Code: The Complete Python Pro Bootcamp</h3>
 
                 {/* Subtitle */}
                 <p>
-                  50+ Generative AI Tools to 10x Business, Productivity, Creativity | ChatGPT, Artificial Intelligence, Prompt Engineering
+                  Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!
                 </p>
 
                 
 
                 {/* Creator Info */}
                 <p className="creator">
-                  Created by <Link href="#">Julian Melanson</Link>, <Link href="#">Benza Maman</Link>, <Link href="#">Leap Year Learning</Link>
+                  Created by <Link href="#">Dr. AngelaYuo</Link>, <Link href="#">Benza Maman</Link>, <Link href="#">Leap Year Learning</Link>
                 </p>
 
                 {/* Footer Info */}
