@@ -9,6 +9,7 @@ import All_courses from '../components/all_courses';
 import Analytics from '../components/analytics';
 import Fifth_sec from '../components/fifth_sec';
 import Plan from '../components/plan';
+import CoursePlayer from '../components/hello';
 
 const Homepage = () => {
   return (
@@ -21,6 +22,7 @@ const Homepage = () => {
 
       <Plan />
       <Feedback />
+      <CoursePlayer/>
     </>
   );
 };
