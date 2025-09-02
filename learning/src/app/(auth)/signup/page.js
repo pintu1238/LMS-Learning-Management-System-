@@ -1,5 +1,6 @@
+"use client"
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 // import React from 'react';
 import Image from 'next/image';
 import LoginImg from "../../../../public/images/LoginBannerImage.webp";
@@ -10,8 +11,10 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 // import { Col, Container, Row } from 'react-bootstrap';
 import second_media_image from "../../../../public/images/login_banner_media.webp";
+import "../../../../public/sass/pages/signup.scss";
 
 const Signup = () => {
+    library.add(fab)
     return (
         <section className="signup">
             <Container>
@@ -29,15 +32,21 @@ const Signup = () => {
 
                             <div className="right">
                                 <div className="contant">
-                                    <h1 className="auth_form_heading">Log in to continue your learning journey</h1>
-                                    <form>
-                                        <div className="form_div">
-                                            <div className="form_group">
-                                                <input type="email" placeholder="Email" required />
-                                            </div>
-                                            <button type="submit">Continue</button>
-                                        </div>
-                                    </form>
+                                    <h1 className="auth_form_heading">Sign up with email.</h1>
+                                    <Form className='form-div'>
+                                        <Form.Group className="name" controlId="formBasicEmail">
+                                            <Form.Control type="name" placeholder="Enter Your Name" />
+                                        </Form.Group>
+                                        <Form.Group className="email" controlId="formBasicPassword">
+                                            <Form.Control type="email" placeholder="Enter your email" />
+                                        </Form.Group>
+                                        <Form.Group className="check-box" controlId="formBasicCheckbox">
+                                            <Form.Check type="checkbox" label="Send me special offers, personalized recommendations, and learning tips." />
+                                        </Form.Group>
+                                        <Button variant="primary" type="submit" className='continue'>
+                                            Submit
+                                        </Button>
+                                    </Form>
                                     <div className="separator_module">
                                         <div className="line_hr"></div>
                                         <h3 className='other_option'>Other log in options</h3>
@@ -48,21 +57,16 @@ const Signup = () => {
                                         </div>
                                         <div className="icon_parent">
                                             <FontAwesomeIcon icon={["fab", "facebook"]} className="fontAwsm facebook" />
-                                            {/* <FontAwesomeIcon icon={["fab", "facebook"]} /> */}
                                         </div>
                                         <div className="icon_parent">
                                             <FontAwesomeIcon icon={["fab", "apple"]} className="fontAwsm apple" />
-                                            {/* <FontAwesomeIcon icon={["fab", "apple"]} /> */}
                                         </div>
                                     </div>
+
                                     <div className="other">
                                         <div className="option">
-                                            <p>Don't have an account?   </p>
-                                            <Link href="#" className='sign_up'>Sign up</Link>
-                                        </div>
-                                        <div className="option">
-                                            {/* <p>Don't have an account?   </p> */}
-                                            <Link href="#" className='sign_up'>Log in with your organization</Link>
+                                            <p>Already have an account?</p>
+                                            <Link href="#" className='sign_up'>Login</Link>
                                         </div>
                                     </div>
                                 </div>

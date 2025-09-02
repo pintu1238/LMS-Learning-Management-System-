@@ -1,8 +1,9 @@
 dl,
 ol,
 ul {
-  margin-top: 0 !important;
-  margin-bottom: 0rem !important;
+  // margin-top: 0 !important;
+  // margin-bottom: 0rem !important;
+  margin: 0;
 }
 
 // @use '../base/variable.scss' as variable;
@@ -16,7 +17,8 @@ ul {
 
 p {
   margin-top: 0;
-  margin-bottom: 0rem !important;
+  // margin-bottom: 0rem !important;
+  margin: 0;
 }
 
 ol,
@@ -46,11 +48,13 @@ p {
 a {
   text-decoration: none;
   outline: none;
+
   // @include mixins.transition(all 0.3s ease);
   &:hover {
     text-decoration: none;
     outline: none;
   }
+
   &:focus {
     text-decoration: none;
     outline: none;
@@ -63,6 +67,7 @@ a {
   text-decoration: none;
   outline: none;
   border-radius: 0;
+
   &:hover {
     box-shadow: none;
     text-decoration: none;
@@ -71,6 +76,7 @@ a {
     border-radius: 0;
     // background-color: variable.$primary_color;
   }
+
   &:focus {
     box-shadow: none;
     text-decoration: none;
@@ -79,17 +85,20 @@ a {
     border-radius: 0;
     // background-color: variable.$primary_color;
   }
+
   &:active {
     box-shadow: none;
     text-decoration: none;
     outline: none;
     border: 0;
     border-radius: 0;
+
     // background-color: variable.$primary_color;
     &:focus {
       box-shadow: none;
     }
   }
+
   &:visited {
     box-shadow: none;
     text-decoration: none;
@@ -103,10 +112,11 @@ a {
 ul {
   margin: 0;
   padding: 0;
+
   li {
     list-style: none;
-    a {
-    }
+
+    a {}
   }
 }
 
@@ -119,9 +129,11 @@ input[type='number']::-webkit-outer-spin-button {
 .list-inline {
   margin: 0;
   padding: 0;
+
   // @include mixins.clearfix();
   li {
     float: left;
+
     a {
       display: inline-block;
     }
@@ -134,18 +146,21 @@ input[type='number']::-webkit-outer-spin-button {
   box-shadow: none;
   text-decoration: none;
   outline: none;
+
   &:hover {
     border-radius: 0;
     box-shadow: none;
     text-decoration: none;
     outline: none;
   }
+
   &:focus {
     border-radius: 0;
     box-shadow: none;
     text-decoration: none;
     outline: none;
   }
+
   &:active {
     border-radius: 0;
     box-shadow: none;
@@ -230,5 +245,4 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 /* Smaller phones */
-@media (max-width: 320px) {
-}
+@media (max-width: 320px) {}

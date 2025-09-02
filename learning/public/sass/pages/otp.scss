@@ -1,88 +1,78 @@
 $primary-color: rgb(109, 40, 210);
 $secondary-color: #000;
-$white: #fff;
 $text-color: #000;
-$gray: grey;
-$link-color: blue;
-$border-radius: 5px;
-$transition: all 0.3s ease-in-out;
+$white: #fff;
 $heading-font: var(--font-stack-heading);
 $text-font: var(--font-stack-text);
+$border-radius: 5px;
+$transition: all 0.3s ease-in-out;
 
-section.login {
-    .loginArea {
+section.otp {
+    div.loginArea {
         padding: 65px 0;
         display: flex;
         align-items: center;
 
-        .left {
+        div.left {
             width: 750px;
             float: left;
 
-            .left_img {
+            div.left_img {
                 height: 700px;
                 width: 600px;
             }
 
-            .media_upr {
+            div.media_upr {
                 display: none;
             }
         }
 
-        .right {
+        div.right {
             width: calc(100% - 750px);
             float: right;
             display: flex;
             justify-content: center;
 
-            .contant {
+            div.contant {
                 width: 100%;
 
                 h1.auth_form_heading {
                     font-family: $heading-font;
                     font-weight: 700;
                     line-height: 1.2;
-                    font-size: 38px;
-                    max-inline-size: 36em;
+                    font-size: 34px;
                     text-align: center;
                     margin-bottom: 30px;
+                }
+
+                p.emmail_details {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    font-weight: 400;
+
+                    span {
+                        font-weight: 600;
+                    }
                 }
 
                 .form-div {
                     margin-bottom: 16px;
 
-                    .name,
-                    .email {
+                    .code-number {
                         margin-bottom: 16px;
 
-                        input {
+                        #formBasicPassword {
                             font-family: $heading-font;
                             font-weight: 700;
                             font-size: 16px;
                             padding: 12px 15px;
-                            border: 1px solid $secondary-color;
+                            border: 1px solid $text-color;
                             border-radius: $border-radius;
                             margin-bottom: 16px;
 
                             &:focus {
-                                outline: $gray;
+                                outline: grey;
                             }
-                        }
-                    }
-
-                    .check-box {
-                        margin-bottom: 14px;
-
-                        .form-check {
-                            display: flex;
-                            align-items: start;
-                            gap: 12px;
-                        }
-
-                        #formBasicCheckbox {
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 31px;
                         }
                     }
 
@@ -99,92 +89,21 @@ section.login {
                         transition: $transition;
 
                         &:hover {
-                            background-color: darken($primary-color, 8%);
+                            background-color: darken($primary-color, 10%);
                         }
                     }
                 }
 
-                .separator_module {
-                    position: relative;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: 24px;
-
-                    .line_hr {
-                        height: 1px;
-                        background-color: $gray;
-                        position: absolute;
-                        width: 100%;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        z-index: -1;
-                    }
-
-                    h3.other_option {
-                        font-size: 16px;
-                        background-color: $white;
-                        color: $gray;
-                        min-width: 160px;
+                div.other {
+                    div.option {
+                        padding: 12px;
                         text-align: center;
-                    }
-                }
 
-                .icons {
-                    display: flex;
-                    justify-content: center;
-                    gap: 20px;
-                    margin-bottom: 24px;
-
-                    .icon_parent {
-                        min-height: 45px;
-                        min-width: 45px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border: 1px solid $primary-color;
-                        background-color: $white;
-                        border-radius: 3px;
-
-                        &:hover {
-                            background-color: rgb(229, 219, 229);
-                        }
-
-                        .fontAwsm {
-                            font-size: 22px;
-                        }
-
-                        .facebook {
-                            color: $link-color;
-                        }
-
-                        .apple {
-                            color: $secondary-color;
-                        }
-                    }
-                }
-
-                .other {
-                    .option {
-                        padding: 16px 0;
-                        text-align: center;
-                        background-color: rgb(224, 224, 224);
-                        border-bottom: 1px solid $secondary-color;
-
-                        &:last-child {
-                            border: none;
-                        }
-
-                        p {
+                        a.resend {
+                            display: inline-block;
                             font-family: $text-font;
-                            font-size: 18px;
-                            color: $text-color;
-                        }
-
-                        a.sign_up {
-                            font-family: $text-font;
-                            font-size: 18px;
-                            color: $link-color;
+                            font-size: 14px;
+                            color: blue;
                             text-decoration: underline;
                             font-weight: 600;
                         }
@@ -202,31 +121,33 @@ section.login {
 }
 
 @media (min-width: 1200px) and (max-width: 1299px) {
-    section.login {
-        .loginArea {
-            .left {
+    section.otp {
+        div.loginArea {
+            div.left {
                 width: 650px;
 
-                .left_img {
+                div.left_img {
                     width: 580px;
                     height: 600px;
                 }
             }
 
-            .right {
+            div.right {
                 width: calc(100% - 650px);
 
-                .contant {
+                div.contant {
                     h1.auth_form_heading {
                         font-size: 36px;
                         margin-bottom: 27px;
                     }
 
-                    .other .option {
+                    div.other {
+                        div.option {
 
-                        p,
-                        a.sign_up {
-                            font-size: 17px;
+                            p,
+                            a.sign_up {
+                                font-size: 17px;
+                            }
                         }
                     }
                 }
@@ -235,22 +156,24 @@ section.login {
     }
 }
 
+/* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-    section.login {
-        .loginArea {
-            .left {
+    section.otp {
+        div.loginArea {
+            div.left {
+                float: left;
                 width: 500px;
 
-                .left_img {
+                div.left_img {
                     width: 475px;
                     height: 500px;
                 }
             }
 
-            .right {
+            div.right {
                 width: calc(100% - 500px);
 
-                .contant {
+                div.contant {
                     h1.auth_form_heading {
                         font-size: 33px;
                         margin-bottom: 22px;
@@ -261,23 +184,32 @@ section.login {
                             font-size: 15px;
                         }
 
-                        .name input,
-                        .email input {
-                            font-size: 14px;
-                            font-weight: 600;
-                            padding: 12px;
+                        .name {
+                            #formBasicEmail {
+                                padding: 12px;
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                        }
+
+                        .email {
+                            #formBasicPassword {
+                                font-weight: 600;
+                            }
                         }
 
                         .check-box {
+                            #formBasicCheckbox {
+                                font-size: 12px;
+                            }
 
-                            #formBasicCheckbox,
                             .form-check-label {
                                 font-size: 12px;
                             }
                         }
                     }
 
-                    .separator_module {
+                    div.separator_module {
                         margin-bottom: 20px;
 
                         h3.other_option {
@@ -285,11 +217,11 @@ section.login {
                         }
                     }
 
-                    .icons {
+                    div.icons {
                         gap: 16px;
                         margin-bottom: 20px;
 
-                        .icon_parent {
+                        div.icon_parent {
                             min-width: 38px;
                             min-height: 38px;
 
@@ -299,11 +231,20 @@ section.login {
                         }
                     }
 
-                    .other .option {
+                    div.other {
+                        div.option {
+                            p {
+                                font-size: 16px;
+                            }
 
-                        p,
-                        a.sign_up {
-                            font-size: 14px;
+                            a.sign_up {
+                                font-size: 16px;
+                            }
+
+                            p,
+                            a.sign_up {
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -314,7 +255,7 @@ section.login {
 
 /* Landscape tablets and ipad */
 @media (min-width: 768px) and (max-width: 991px) {
-    section.login {
+    section.otp {
         div.loginArea {
             div.left {
                 float: left;
@@ -423,7 +364,7 @@ section.login {
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 576px) and (max-width: 767px) {
-    section.login {
+    section.otp {
         div.loginArea {
             display: block;
             width: 100%;
@@ -537,7 +478,7 @@ section.login {
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 361px) and (max-width: 575px) {
-    section.login {
+    section.otp {
         div.loginArea {
             display: block;
             // width: 100%;
@@ -651,7 +592,7 @@ section.login {
 
 /* Smaller phones */
 @media (max-width: 360px) {
-    section.login {
+    section.otp {
         div.loginArea {
             display: block;
             // width: 100%;

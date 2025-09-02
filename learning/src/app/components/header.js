@@ -1,13 +1,10 @@
-
 "use client";
 import { useState } from "react";
 import "../../../public/sass/pages/header.scss";
+// import "../../../public/sass/pages/herderscss.scss";
 import { Col, Container, Row } from "react-bootstrap";
-
 import Link from "next/link";
 import Image from "next/image";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -296,23 +293,15 @@ const Header = () => {
                         )}
                       </div>
                     </nav>
-
                     <div className="search_box">
-                      <FontAwesomeIcon
-                        icon={["fab", "searchengin"]}
-                        className="search_icon"
-                      />
-                      <input
-                        type="text"
-                        placeholder="Search for anything"
-                      // className="search_icon"
-                      />
+                      <FontAwesomeIcon icon={["fab", "searchengin"]} className="search_icon" />
+                      <input type="Ftext" placeholder="Search for anything" className="search_icon" />
                     </div>
                   </div>
                   <div className="right_of_right">
-                    <nav className="plans_area">
+                    <div className="plans_area">
                       <Link href="#">Plans & Pricing</Link>
-                    </nav>
+                    </div>
                     <div className="cart_area">
                       <Link href="#">
                         <FontAwesomeIcon
@@ -336,8 +325,8 @@ const Header = () => {
                       />
                     </div>
                     <div className="bars">
-                      <FontAwesomeIcon icon={["fas", "bars"]} 
-                        className="bar_icons"/>
+                      <FontAwesomeIcon icon={["fas", "bars"]}
+                        className="bar_icons" />
                     </div>
                   </div>
                 </div>
