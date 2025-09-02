@@ -9,7 +9,10 @@ import Aboutus_sectiontwo from '../components/about_sectiontwo';
 
 import Career_sectionthree from '../components/career_sectionthree';
 import Career_sectionfour from '../components/career_sectionfour';
-
+import Feedback from '../components/feedback';
+import Third_sec from '../components/third_sec';
+import All_courses from '../components/all_courses';
+import Faq from '../components/faq';
 const Homepage = () => {
   return (
     <>
@@ -20,6 +23,10 @@ const Homepage = () => {
 
       <Career_sectionthree />
       <Career_sectionfour />
+      <Faq />
+      <Feedback />
+      <Third_sec />
+      <All_courses />
     </>
   );
 };

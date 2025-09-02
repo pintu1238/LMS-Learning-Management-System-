@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    margin-bottom: 40px;
 
     .left_area {
       width: 600px;
@@ -141,6 +142,106 @@
       }
     }
   }
+
+  .career_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 950px;
+    margin: 0 auto;
+
+    .left_area {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      flex: 1;
+
+      .icon_box {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 12px;
+      }
+
+      .text_box {
+        h3 {
+          margin: 0;
+          font-size: 18px;
+          font-weight: bold;
+          color: #222;
+        }
+
+        p {
+          margin: 8px 0;
+          font-size: 14px;
+          color: #555;
+        }
+
+        .social_icons {
+          margin-top: 10px;
+
+          a {
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 12px;
+            color: #333;
+          }
+        }
+      }
+    }
+
+    .right_area {
+      text-align: left;
+      flex: 0.6;
+
+      h3 {
+        font-size: 18px;
+        margin: 0 0 12px;
+        color: #222;
+      }
+
+      .action_row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 10px;
+
+        .btn {
+          background: #7b2ff7;
+          color: white;
+          padding: 10px 18px;
+          border-radius: 6px;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+          transition: background 0.3s;
+
+          &:hover {
+            background: #5a0ecc;
+          }
+        }
+
+        .price {
+          font-size: 18px;
+          font-weight: bold;
+          color: #222;
+        }
+      }
+
+      .learners {
+        font-size: 13px;
+        color: #555;
+
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
 /* 1680 desktop */
@@ -236,6 +337,15 @@
       }
       .right_area {
         width: 100%;
+        flex-direction: column;
+
+        .content_heading {
+          width: 100%;
+        }
+
+        .course_content {
+          width: 100%;
+        }
       }
       flex-direction: column;
       gap: 30px;
@@ -253,7 +363,25 @@
       .left_area,
       .right_area {
         width: 100%;
+
+        flex-direction: column;
+
+        .content_heading {
+          width: 100%;
+        }
+
+        .course_content {
+          width: 100%;
+        }
       }
+    }
+  }
+
+  .career_card {
+    flex-direction: column;
+
+    .right_area {
+      padding-top: 20px;
     }
   }
 }
@@ -268,7 +396,30 @@
       .left_area,
       .right_area {
         width: 100%;
+
+        flex-direction: column;
+
+        .content_heading {
+          width: 100%;
+        }
+
+        .course_content {
+          width: 100%;
+        }
       }
+    }
+  }
+
+  .career_card {
+    flex-direction: column;
+
+    .left_area {
+      .icon_box {
+        display: none;
+      }
+    }
+    .right_area {
+      padding-top: 20px;
     }
   }
 }
@@ -283,7 +434,30 @@
       .left_area,
       .right_area {
         width: 100%;
+
+        flex-direction: column;
+
+        .content_heading {
+          width: 100%;
+        }
+
+        .course_content {
+          width: 100%;
+        }
       }
+    }
+  }
+
+  .career_card {
+    flex-direction: column;
+
+    .left_area {
+      .icon_box {
+        display: none;
+      }
+    }
+    .right_area {
+      padding-top: 20px;
     }
   }
 }
@@ -298,7 +472,30 @@
       .left_area,
       .right_area {
         width: 100%;
+
+        flex-direction: column;
+
+        .content_heading {
+          width: 100%;
+        }
+
+        .course_content {
+          width: 100%;
+        }
       }
+    }
+  }
+
+  .career_card {
+    flex-direction: column;
+
+    .left_area {
+      .icon_box {
+        display: none;
+      }
+    }
+    .right_area {
+      padding-top: 20px;
     }
   }
 }
