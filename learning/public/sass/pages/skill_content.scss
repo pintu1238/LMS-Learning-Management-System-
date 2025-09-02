@@ -2,9 +2,12 @@
   margin-top: 30px;
 
   .inner_parent {
+    position: relative;
+    margin-bottom: 60px;
     .left {
       float: left;
-      width: 800px;
+      // width: 800px;
+      width: 60%;
 
       .learn_box {
         border: 1px solid #d1d7dc;
@@ -12,6 +15,7 @@
         border-radius: 6px;
         background-color: #fff;
         margin-bottom: 60px;
+        margin-top: 40px;
 
         h3 {
           font-size: 20px;
@@ -39,7 +43,7 @@
               min-height: 65px;
 
               &::before {
-                content: "✔";
+                content: '✔';
                 position: absolute;
                 left: -20px;
                 color: #2d2f31;
@@ -154,177 +158,88 @@
       }
 
       .course_content {
+        padding: 20px;
+        background: #fff;
         margin-bottom: 60px;
 
-        .content {
-          .c_content {
-            font-size: 22px;
-            font-weight: 700;
-            color: black;
-          }
+        .title {
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 8px;
+          color: #1c1d1f;
+        }
 
-          .course_detail {
-            display: flex;
-            justify-content: space-between;
+        .subtitle {
+          font-size: 14px;
+          color: #6a6f73;
+          margin-bottom: 20px;
+        }
 
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              color: black;
+        .custom_accordion {
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          overflow: hidden;
+
+          .accordion-item {
+            border: none;
+            border-bottom: 1px solid #eee;
+
+            &:last-child {
+              border-bottom: none;
             }
 
-            // .accordan_sec {
-            //   .accordion {
-            //     --bs-accordion-color: black;
-            //     --bs-accordion-bg: white;
-            //     --bs-accordion-transition: none, background-color none,
-            //       border-color none, box-shadow none, border-radius none;
-            //     --bs-accordion-border-color: var(--bs-border-color);
-            //     --bs-accordion-border-width: var(--bs-border-width);
-            //     --bs-accordion-border-radius: var(--bs-border-radius);
-            //     --bs-accordion-inner-border-radius: calc(
-            //       var(--bs-border-radius) - (var(--bs-border-width))
-            //     );
-            //     --bs-accordion-btn-padding-x: 1.25rem;
-            //     --bs-accordion-btn-padding-y: 1rem;
-            //     --bs-accordion-btn-color: none;
-            //     --bs-accordion-btn-bg: var(--bs-accordion-bg);
-            //     --bs-accordion-btn-icon: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="%23212529" stroke-linecap="round" stroke-linejoin="round"%3e%3cpath d="m2 5 6 6 6-6" /%3e%3c/svg%3e');
-            //     --bs-accordion-btn-icon-width: 1.25rem;
-            //     --bs-accordion-btn-icon-transform: rotate(-180deg);
-            //     --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-            //     --bs-accordion-btn-active-icon: "none";
-            //     --bs-accordion-btn-focus-box-shadow: "none";
-            //     --bs-accordion-body-padding-x: none;
-            //     --bs-accordion-body-padding-y: none;
-            //     --bs-accordion-active-color: none;
-            //     --bs-accordion-active-bg: none;
+            // Header area
+            .accordion-header {
+              button {
+                background: #f7f9fa;
+                padding: 16px 20px;
+                font-size: 16px;
+                font-weight: 600;
+                width: 100%;
+                text-align: left;
+                box-shadow: none !important;
 
-            //     // .accordion {
-            //     // Your existing variables...
+                &:focus {
+                  outline: none;
+                  box-shadow: none;
+                }
+              }
+            }
 
-            //     .accordion-item:first-of-type {
-            //       border-top-left-radius: var(--bs-accordion-border-radius);
-            //       border-top-right-radius: var(--bs-accordion-border-radius);
+            .accordion-header-content {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
 
-            //       .accordion-header {
-            //         margin-bottom: 0;
+              h4 {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0;
+                color: #1c1d1f;
+              }
 
-            //         header .accordion-button {
-            //           border-top-left-radius: var(
-            //             --bs-accordion-inner-border-radius
-            //           );
-            //           border-top-right-radius: var(
-            //             --bs-accordion-inner-border-radius
-            //           );
+              p {
+                font-size: 13px;
+                color: #6a6f73;
+                margin: 0;
+              }
+            }
 
-            //           .accordion-header-content {
-            //             display: flex;
-            //             justify-content: space-between;
-            //             align-items: center;
-            //             width: 100%; // ✅ this is necessary
-            //             // gap: 20px;
+            // Body area
+            .accordion-body {
+              background: #fff;
+              padding: 15px 25px;
+              font-size: 14px;
+              color: #444;
 
-            //             h3,
-            //             .heading_a {
-            //               margin: 0; // ✅ remove default margin
-            //               font-size: 14px; // ✅ force font-size to apply
-            //               font-weight: 600;
-            //               color: black;
-            //               flex: 1; // ✅ allow to take available space
-            //             }
+              ul {
+                margin: 0;
+                padding-left: 20px;
 
-            //             .accordion-meta {
-            //               margin: 0; // ✅ reset default browser margin
-            //               font-size: 13px; // ✅ ensure font-size applies
-            //               font-weight: 400;
-            //               color: rgb(54, 52, 52);
-            //               white-space: nowrap; // ✅ keep it inline
-            //             }
-            //           }
-            //         }
-            //       }
-            //     }
-            //   }
-            // }
-            .accordan_sec {
-              .accordion {
-                --bs-accordion-color: black;
-                --bs-accordion-bg: white;
-                --bs-accordion-transition: none;
-                --bs-accordion-border-color: #e5e5e5;
-                --bs-accordion-border-width: 1px;
-                --bs-accordion-border-radius: 0.5rem;
-                --bs-accordion-inner-border-radius: calc(
-                  var(--bs-border-radius) - var(--bs-border-width)
-                );
-                --bs-accordion-btn-padding-x: 1rem;
-                --bs-accordion-btn-padding-y: 1rem;
-                --bs-accordion-btn-color: none;
-                --bs-accordion-btn-bg: var(--bs-accordion-bg);
-                --bs-accordion-btn-icon: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="%23212529" stroke-linecap="round" stroke-linejoin="round"%3e%3cpath d="m2 5 6 6 6-6" /%3e%3c/svg%3e');
-                --bs-accordion-btn-icon-width: 1rem;
-                --bs-accordion-btn-icon-transform: rotate(0deg);
-                --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-                --bs-accordion-btn-active-icon: "none";
-                --bs-accordion-btn-focus-box-shadow: none;
-                --bs-accordion-body-padding-x: 1rem;
-                --bs-accordion-body-padding-y: 1rem;
-                --bs-accordion-active-color: none;
-                --bs-accordion-active-bg: none;
-
-                .accordion-item {
-                  border: 1px solid var(--bs-accordion-border-color);
-                  margin-bottom: 0.5rem;
-                  border-radius: var(--bs-accordion-border-radius);
-
-                  .accordion-header {
-                    margin-bottom: 0;
-
-                    .accordion-button {
-                      padding: var(--bs-accordion-btn-padding-y)
-                        var(--bs-accordion-btn-padding-x);
-                      background-color: var(--bs-accordion-bg);
-                      color: var(--bs-accordion-color);
-                      border-radius: var(--bs-accordion-border-radius);
-                      width: 100%;
-                      text-align: left;
-
-                      &:focus {
-                        box-shadow: var(--bs-accordion-btn-focus-box-shadow);
-                      }
-
-                      .accordion-header-content {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        width: 100%;
-
-                        h3 {
-                          margin: 0;
-                          font-size: 16px;
-                          font-weight: 600;
-                          color: black;
-                          flex: 1;
-                          padding-right: 10px;
-                        }
-                        .h3,
-                        h3 {
-                          font-size: 1.3rem;
-                          font-weight: 600;
-                          color: black;
-                        }
-
-                        .accordion-meta {
-                          margin: 0;
-                          font-size: 13px;
-                          font-weight: 400;
-                          color: rgb(110, 110, 110);
-                          white-space: nowrap;
-                        }
-                      }
-                    }
-                  }
+                li {
+                  margin-bottom: 6px;
+                  line-height: 1.5;
                 }
               }
             }
@@ -442,9 +357,12 @@
 
     .right {
       float: right;
-      width: calc(100% - 800px);
+      // width: calc(100% - 800px);
+      width: 40%;
       padding-left: 50px;
-      
+
+      position: sticky;
+      top: 450px; // upar se distance
 
       .course-container {
         padding: 12px 15px;
@@ -564,40 +482,36 @@
           font-weight: bold;
         }
 
-        .applied-coupon{
-
-          p{
+        .applied-coupon {
+          p {
             font-size: 16px;
             font-weight: 400;
           }
 
-          .coupon-box{
+          .coupon-box {
             margin-top: 10px;
 
-            input{
+            input {
               padding: 7px 15px;
               margin-right: 25px;
+              max-width: 100px;
             }
 
-            a{
+            a {
               background-color: #5624d0;
               color: white;
               padding: 11px 17px;
               border-radius: 2px;
             }
-
-
           }
         }
-
-
       }
     }
 
     &::after {
       clear: both;
       display: table;
-      content: "";
+      content: '';
     }
   }
 }

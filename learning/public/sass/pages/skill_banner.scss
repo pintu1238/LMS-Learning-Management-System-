@@ -9,8 +9,6 @@
 //         }
 //     }
 
-
-    
 // }
 
 .banner {
@@ -20,9 +18,11 @@
   padding: 40px 20px;
 
   .inner_parent {
+    position: relative;
     .content {
       min-height: 335px;
-      width: 800px;
+      // max-width: 800px;
+      width: 60%;
 
       .breadcrumbs {
         margin-bottom: 12px;
@@ -32,7 +32,6 @@
           margin: 0 0 12px 0;
           display: flex;
           gap: 8px;
-          
 
           li {
             a {
@@ -55,14 +54,13 @@
         margin-bottom: 20px;
       }
 
-      p{
+      p {
         font-size: 18px;
         font-weight: 400;
         color: #ccc;
         padding-bottom: 15px;
       }
 
- 
       .creator {
         margin-bottom: 15px;
 
@@ -84,7 +82,104 @@
         a {
           color: #7ecbff;
           font-size: 14px;
+        }
+      }
+    }
 
+    .premium-card {
+      position: absolute;
+      bottom: -100px;
+      display: flex;
+      align-items: center;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      // max-width: 750px;
+      width: 60%;
+      // height: auto;
+      height: 100px;
+
+      overflow: hidden;
+
+      .left-box {
+        background: #6d28d9;
+        color: #fff;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 1.1rem;
+        min-width: 120px;
+      }
+
+      .middle-content {
+        flex: 1;
+        padding: 16px 24px;
+
+        p {
+          color: #374151;
+          font-size: 0.95rem;
+          line-height: 1.4;
+
+          a {
+            color: #6d28d9;
+            font-weight: 600;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .right-info {
+        display: flex;
+        align-items: center;
+        border-left: 1px solid #e5e7eb;
+        padding: 16px 24px;
+        gap: 40px;
+        text-align: center;
+
+        .rating {
+          .score {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 4px;
+          }
+
+          .stars {
+            color: #facc15;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+          }
+
+          a {
+            font-size: 0.85rem;
+            color: #2563eb;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .learners {
+          .count {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 2px;
+          }
+
+          .label {
+            font-size: 0.85rem;
+            color: #6b7280;
+          }
         }
       }
     }
