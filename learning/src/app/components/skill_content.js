@@ -1,9 +1,9 @@
-"use client";
-import React, { useState } from "react";
+'use client';
+import React, { useState } from 'react';
 
-import "../../../public/sass/pages/skill_content.scss";
-import { Accordion, Col, Container, Row } from "react-bootstrap";
-import Link from "next/link";
+import '../../../public/sass/pages/skill_content.scss';
+import { Accordion, Col, Container, Row } from 'react-bootstrap';
+import Link from 'next/link';
 
 const Skill_content = () => {
   const [showMore, setShowMore] = useState(false);
@@ -126,8 +126,8 @@ const Skill_content = () => {
 
                   <div className="show_more">
                     <a onClick={toggleShowMore} role="button">
-                      {showMore ? "Show less" : "Show more"}{" "}
-                      <span>{showMore ? "▲" : "▼"}</span>
+                      {showMore ? 'Show less' : 'Show more'}{' '}
+                      <span>{showMore ? '▲' : '▼'}</span>
                     </a>
                   </div>
                 </div>
@@ -170,183 +170,201 @@ const Skill_content = () => {
                 </div>
 
                 <div className="course_content">
-                  <div className="content">
-                    <h3 className="c_content">Course Content</h3>
+                  <h3 className="title">Course content</h3>
+                  <p className="subtitle">
+                    54 sections • 519 lectures • 39h 22m total length
+                  </p>
 
-                    <div className="course_detail">
-                      <p>101 sections • 597 lectures • 56h 28m total length</p>
+                  <Accordion
+                    defaultActiveKey="0"
+                    alwaysOpen
+                    className="custom_accordion"
+                  >
+                    {/* Section 1 */}
+                    <Accordion.Item eventKey="0">
+                      <Accordion.Header>
+                        <div className="accordion-header-content">
+                          <h4>The Complete AI Guide Introduction</h4>
+                          <p>2 lectures • 4min</p>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul>
+                          <li>Welcome to the course</li>
+                          <li>How to get the most out of this course</li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
 
-                      <p>Expand Section</p>
-                    </div>
+                    {/* Section 2 */}
+                    <Accordion.Item eventKey="1">
+                      <Accordion.Header>
+                        <div className="accordion-header-content">
+                          <h4>
+                            Getting Started with ChatGPT, Prompting, and How
+                            LLM's Work
+                          </h4>
+                          <p>9 lectures • 1hr 18min</p>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul>
+                          <li>Introduction to Prompting</li>
+                          <li>Understanding LLMs</li>
+                          <li>Basic Prompt Structures</li>
+                          <li>Types of Prompts</li>
+                          <li>Effective Prompting Techniques</li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
 
-                    <div className="accordan_sec">
-                      <div className="accordan_sec">
-                        <Accordion>
-                          <Accordion.Item eventKey="0">
-                            <Accordion.Header>
-                              <div className="accordion-header-content">
-                                <h3>
-                                  Day 1 - Beginner - Working with Variables in
-                                  Python to Manage Data
-                                </h3>
-                                <p className="accordion-meta">
-                                  12 lectures • 1hr 12min
-                                </p>
-                              </div>
-                            </Accordion.Header>
-                            <Accordion.Body>
-                              {/* Your content here */}
-                            </Accordion.Body>
-                          </Accordion.Item>
+                    {/* Section 3 */}
+                    <Accordion.Item eventKey="2">
+                      <Accordion.Header>
+                        <div className="accordion-header-content">
+                          <h4>
+                            ChatGPT in Action: Features, Use Cases, and Tools
+                          </h4>
+                          <p>12 lectures • 1hr 32min</p>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul>
+                          <li>Exploring ChatGPT Features</li>
+                          <li>Real-world Use Cases</li>
+                          <li>Using ChatGPT for Productivity</li>
+                          <li>Tools & Integrations</li>
+                          <li>Case Studies</li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
 
-                          <Accordion.Item eventKey="1">
-                            <Accordion.Header>
-                              <div className="accordion-header-content">
-                                <h3>
-                                  Day 2 - Beginner - Understanding Data Types
-                                  and How to Manipulate Strings
-                                </h3>
-                                <p className="accordion-meta">
-                                  7 lectures • 58min
-                                </p>
-                              </div>
-                            </Accordion.Header>
-                            <Accordion.Body>
-                              {/* Your content here */}
-                            </Accordion.Body>
-                          </Accordion.Item>
+                    {/* Section 4 */}
+                    <Accordion.Item eventKey="3">
+                      <Accordion.Header>
+                        <div className="accordion-header-content">
+                          <h4>
+                            ChatGPT: Prompt Engineering and Custom 17 Page
+                            Prompting Guide PDF
+                          </h4>
+                          <p>22 lectures • 1hr 14min</p>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul>
+                          <li>Prompt Engineering Basics</li>
+                          <li>Prompt Frameworks</li>
+                          <li>Using the 17-page PDF Guide</li>
+                          <li>Designing Better Prompts</li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
 
-                          <Accordion.Item eventKey="2">
-                            <Accordion.Header>
-                              <div className="accordion-header-content">
-                                <h3>
-                                  Day 3 - Beginner - Control Flow and Logical
-                                  Operators
-                                </h3>
-                                <p className="accordion-meta">
-                                  10 lectures • 1hr 15min
-                                </p>
-                              </div>
-                            </Accordion.Header>
-                            <Accordion.Body>
-                              {/* Your content here */}
-                            </Accordion.Body>
-                          </Accordion.Item>
+                    {/* Section 5 */}
+                    <Accordion.Item eventKey="4">
+                      <Accordion.Header>
+                        <div className="accordion-header-content">
+                          <h4>
+                            ChatGPT: Enhancements, Extensions, and Advanced
+                            Features
+                          </h4>
+                          <p>23 lectures • 1hr 31min</p>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul>
+                          <li>ChatGPT Pro Features</li>
+                          <li>Extensions & Plugins</li>
+                          <li>Integrating APIs</li>
+                          <li>Advanced Features Overview</li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
 
-                          <Accordion.Item eventKey="3">
-                            <Accordion.Header>
-                              <div className="accordion-header-content">
-                                <h3>
-                                  Day 4 - Beginner - Randomisation and Python
-                                  Lists
-                                </h3>
-                                <p className="accordion-meta">
-                                  7 lectures • 1hr 4min
-                                </p>
-                              </div>
-                            </Accordion.Header>
-                            <Accordion.Body>
-                              {/* Your content here */}
-                            </Accordion.Body>
-                          </Accordion.Item>
+                    {/* Section 6 */}
+                    <Accordion.Item eventKey="5">
+                      <Accordion.Header>
+                        <div className="accordion-header-content">
+                          <h4>
+                            ChatGPT Quick Skills: Simplify Information,
+                            Proofread, and Organize Data
+                          </h4>
+                          <p>13 lectures • 29min</p>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul>
+                          <li>Summarizing Text</li>
+                          <li>Proofreading Documents</li>
+                          <li>Organizing Information</li>
+                          <li>Converting Data Formats</li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
 
-                          <Accordion.Item eventKey="4">
-                            <Accordion.Header>
-                              <div className="accordion-header-content">
-                                <h3>Day 5 - Beginner - Python Loops</h3>
-                                <p className="accordion-meta">
-                                  6 lectures • 41min
-                                </p>
-                              </div>
-                            </Accordion.Header>
-                            <Accordion.Body>
-                              {/* Your content here */}
-                            </Accordion.Body>
-                          </Accordion.Item>
+                    {/* Section 7 */}
+                    <Accordion.Item eventKey="6">
+                      <Accordion.Header>
+                        <div className="accordion-header-content">
+                          <h4>
+                            ChatGPT Quick Skills: Content Creation, Copywriting,
+                            SEO, and Scripts
+                          </h4>
+                          <p>24 lectures • 1hr</p>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul>
+                          <li>Writing Blog Posts</li>
+                          <li>SEO Copywriting</li>
+                          <li>Social Media Captions</li>
+                          <li>Ad Scripts & Sales Copy</li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
 
-                          <Accordion.Item eventKey="5">
-                            <Accordion.Header>
-                              <div className="accordion-header-content">
-                                <h3>
-                                  Day 6 - Beginner - Python Functions & Karel
-                                </h3>
-                                <p className="accordion-meta">
-                                  9 lectures • 1hr 23min
-                                </p>
-                              </div>
-                            </Accordion.Header>
-                            <Accordion.Body>
-                              {/* Your content here */}
-                            </Accordion.Body>
-                          </Accordion.Item>
+                    {/* Section 8 */}
+                    <Accordion.Item eventKey="7">
+                      <Accordion.Header>
+                        <div className="accordion-header-content">
+                          <h4>
+                            ChatGPT Quick Skills: Self-Guided Learning,
+                            Qualitative & Quantitative Research
+                          </h4>
+                          <p>21 lectures • 1hr</p>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul>
+                          <li>Learning with ChatGPT</li>
+                          <li>Conducting Research</li>
+                          <li>Analyzing Data</li>
+                          <li>Building Reports</li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
 
-                          <Accordion.Item eventKey="6">
-                            <Accordion.Header>
-                              <div className="accordion-header-content">
-                                <h3>Day 7 - Beginner - Hangman</h3>
-                                <p className="accordion-meta">
-                                  8 lectures • 58min
-                                </p>
-                              </div>
-                            </Accordion.Header>
-                            <Accordion.Body>
-                              {/* Your content here */}
-                            </Accordion.Body>
-                          </Accordion.Item>
-
-                          <Accordion.Item eventKey="7">
-                            <Accordion.Header>
-                              <div className="accordion-header-content">
-                                <h3>
-                                  Day 8 - Beginner - Function Parameters &
-                                  Caesar Cipher
-                                </h3>
-                                <p className="accordion-meta">
-                                  7 lectures • 1hr 5min
-                                </p>
-                              </div>
-                            </Accordion.Header>
-                            <Accordion.Body>
-                              {/* Your content here */}
-                            </Accordion.Body>
-                          </Accordion.Item>
-
-                          <Accordion.Item eventKey="8">
-                            <Accordion.Header>
-                              <div className="accordion-header-content">
-                                <h3>
-                                  Day 9 - Beginner - Dictionaries, Nesting and
-                                  the Secret Auction
-                                </h3>
-                                <p className="accordion-meta">
-                                  5 lectures • 50min
-                                </p>
-                              </div>
-                            </Accordion.Header>
-                            <Accordion.Body>
-                              {/* Your content here */}
-                            </Accordion.Body>
-                          </Accordion.Item>
-
-                          <Accordion.Item eventKey="9">
-                            <Accordion.Header>
-                              <div className="accordion-header-content">
-                                <h3>
-                                  Day 10 - Beginner - Functions with Outputs
-                                </h3>
-                                <p className="accordion-meta">
-                                  6 lectures • 55min
-                                </p>
-                              </div>
-                            </Accordion.Header>
-                            <Accordion.Body>
-                              {/* Your content here */}
-                            </Accordion.Body>
-                          </Accordion.Item>
-                        </Accordion>
-                      </div>
-                    </div>
-                  </div>
+                    {/* Section 9 */}
+                    <Accordion.Item eventKey="8">
+                      <Accordion.Header>
+                        <div className="accordion-header-content">
+                          <h4>
+                            CustomGPTs: Create Your Own Custom Versions of
+                            ChatGPT
+                          </h4>
+                          <p>7 lectures • 39min</p>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul>
+                          <li>Introduction to CustomGPTs</li>
+                          <li>Creating Your First CustomGPT</li>
+                          <li>Deploying CustomGPT</li>
+                          <li>Practical Examples</li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
                 </div>
 
                 <div className="course-info">
@@ -378,7 +396,7 @@ const Skill_content = () => {
                       Welcome to the 100 Days of Code - The Complete Python Pro
                       Bootcamp,
                       <strong>the only course you need</strong> to learn to code
-                      with Python. With over 500,000{" "}
+                      with Python. With over 500,000{' '}
                       <strong>5 STAR reviews</strong> and a 4.8 average, my
                       courses are some of the HIGHEST RATED courses in the
                       history of Udemy!
@@ -392,16 +410,16 @@ const Skill_content = () => {
                     <p>
                       At 60+ hours, this Python course is without a doubt the
                       <strong>most comprehensive</strong> Python course
-                      available anywhere online. Even if you have{" "}
+                      available anywhere online. Even if you have{' '}
                       <strong>zero</strong> programming experience, this course
-                      will take you from{" "}
+                      will take you from{' '}
                       <strong>beginner to professional</strong>. Here's why:
                     </p>
                     <ul>
                       <li>
-                        The course is taught by the{" "}
+                        The course is taught by the{' '}
                         <strong>lead instructor</strong> at the App Brewery,
-                        London's{" "}
+                        London's{' '}
                         <strong>best in-person programming Bootcamp</strong>.
                       </li>
                       <li>
@@ -476,7 +494,7 @@ const Skill_content = () => {
                   </Link>
 
                   <p className="price-note">
-                    Starting at <span className="old-price">₹500</span>{" "}
+                    Starting at <span className="old-price">₹500</span>{' '}
                     <span className="new-price">₹375</span> per month
                   </p>
                   <p className="cancel-note">Cancel anytime</p>
