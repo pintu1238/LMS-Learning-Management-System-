@@ -1,5 +1,4 @@
 import React from 'react'
-// import image from "next/image";
 import Image from 'next/image';
 import Aboutus_banner from '@/app/components/aboutus_banner';
 import Aboutus_sectiontwo from '@/app/components/about_sectiontwo';
