@@ -201,6 +201,12 @@ section.login {
     }
 }
 
+section.login .loginArea .right .contant .other .option p,
+section.login .loginArea .right .contant .other .option a.sign_up {
+    display: inline-block;
+}
+
+
 @media (min-width: 1200px) and (max-width: 1299px) {
     section.login {
         .loginArea {
