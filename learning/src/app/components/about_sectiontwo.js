@@ -8,9 +8,7 @@ const Aboutus_sectiontwo = () => {
     return (
         <>
         <section className="sectiontwo">
-            {/* <Container fluid>
-                    <Row>
-                        <Col> */}
+            
                             <div className="second">
                                 <p className="para">
                                     <Link href="#" className="log">
@@ -18,17 +16,7 @@ const Aboutus_sectiontwo = () => {
                                     </Link>
                                 </p>
                             </div>
-                        {/* </Col>
-                    </Row>
-                </Container> */}
-
-
-                 {/* <Container>
-                    <Row>
-                        <Col>
-                        </Col>
-                    </Row>
-                </Container> */}
+                       
         </section>
 
         </>

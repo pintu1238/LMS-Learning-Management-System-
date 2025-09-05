@@ -54,107 +54,129 @@
 
 //     }
 // }
-.bannef_section{
-    
-    .banner{
-         background-color: #f2f2f2;
-            padding: 20px 0;
-            text-align: center;
+.bannef_section {
 
-            .banner_text {
-                font-size: 24px;
-                font-weight: 600;
-                color: #111;
-            }
+  .banner {
+    background-color:#242845;
+
+    padding: 20px 0;
+    text-align: center;
+
+    .banner_text {
+      font-size: 24px;
+      font-weight: 600;
+      color: #ffff;
     }
+  }
 }
 
 
 .cms_section {
-    
-    .inner_parent {
-       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
 
-        .detail_area {
-            .udemy {
-                padding: 0 0 20px 0;
-                font-size: 28px;
-                font-weight: 600;
-                color: #111;
-            }
+  .inner_parent {
+    padding: 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-            .para {
-                padding: 0 0 10px 0;
-                font-size: 26px;
-                font-weight: 500;
-                color: #111;
-            }
-
-            .please {
-                padding: 0 0 10px 0;
-                font-size: 24px;
-                font-weight: 500;
-                color: #111;
-            }
-
-            .tf_you {
-                padding: 0 0 10px 0;
-                font-size: 22px;
-                font-weight: 500;
-                color: #111;
-            }
-
-            .mission {
-                padding: 0 0 10px 0;
-                font-size: 20px;
-                font-weight: 500;
-                color: #111;
-            }
-
-            .website {
-                padding: 0 0 10px 0;
-                font-size: 18px;
-                font-weight: 500;
-                color: #111;
-            }
-
-            p.cause {
-                padding: 0 0 15px 0;
-                font-size: 16px;
-                font-weight: 400;
-                color: #111;
-            }
-
-            ul.unlist {
-                padding: 0 0 15px 0;
-                li {
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: #111;
-                    
-                }
-            }
+    .detail_area {
+      .udemy {
 
 
-            ol.list {
-               
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: 600;
+        color: #111;
+      }
 
-                li {
+      .para {
 
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: #111;
-                }
-                p.baker{
-                 padding: 0 0 15px 0;
-                 font-size: 16px;
-                 font-weight: 400;
-                 color: #111;
-             
-                }
-            }
+        margin-bottom: 20px;
+        font-size: 26px;
+        font-weight: 500;
+        color: #111;
+      }
+
+      .please {
+
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #111;
+      }
+
+      .tf_you {
+
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #111;
+      }
+
+      .mission {
+
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #111;
+      }
+
+      .website {
+
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #111;
+      }
+
+      p.cause {
+
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #111;
+      }
+
+      ul.unlist {
+
+        margin-bottom: 20px;
+
+        li {
+          font-size: 16px;
+          font-weight: 400;
+          color: #111;
+          list-style: disc;
+          list-style-position: inside;
+
         }
+      }
+
+      ol.list {
+        margin-bottom: 20px;
+        padding-left: 25px; 
+        list-style-type: decimal;
+        list-style-position: outside;
+
+        li {
+          margin-bottom: 15px;
+
+          h3.Fresh {
+            font-size: 17px;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 8px;
+          }
+
+          p.baker {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+            color: #111;
+          }
+        }
+      }
+
     }
+  }
 }
 
 
@@ -168,13 +190,24 @@
 
 /* 1600 desktop */
 @media (min-width: 1600px) and (max-width: 1679px) {
-    .cms_section {
+  .cms_section {
     .inner_parent {
       .detail_area {
-        .udemy { font-size: 32px; }
-        .para { font-size: 30px; }
-        .please { font-size: 28px; }
-        .tf_you { font-size: 26px; }
+        .udemy {
+          font-size: 32px;
+        }
+
+        .para {
+          font-size: 30px;
+        }
+
+        .please {
+          font-size: 28px;
+        }
+
+        .tf_you {
+          font-size: 26px;
+        }
       }
     }
   }
@@ -194,7 +227,7 @@
 
 /* Landscape tablets and ipad */
 @media (min-width: 768px) and (max-width: 991px) {
-    .bannef_section {
+  .bannef_section {
     .banner {
       padding: 18px 0;
 
@@ -207,12 +240,29 @@
   .cms_section {
     .inner_parent {
       .detail_area {
-        .udemy { font-size: 24px; }
-        .para { font-size: 22px; }
-        .please { font-size: 20px; }
-        .tf_you { font-size: 18px; }
-        .mission { font-size: 16px; }
-        .website { font-size: 15px; }
+        .udemy {
+          font-size: 24px;
+        }
+
+        .para {
+          font-size: 22px;
+        }
+
+        .please {
+          font-size: 20px;
+        }
+
+        .tf_you {
+          font-size: 18px;
+        }
+
+        .mission {
+          font-size: 16px;
+        }
+
+        .website {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -226,7 +276,7 @@
 
 /* Smaller phones */
 @media (max-width: 360px) {
-    .bannef_section {
+  .bannef_section {
     .banner {
       padding: 12px 0;
 
@@ -239,15 +289,41 @@
   .cms_section {
     .inner_parent {
       .detail_area {
-        .udemy { font-size: 20px; }
-        .para { font-size: 18px; }
-        .please { font-size: 16px; }
-        .tf_you { font-size: 15px; }
-        .mission { font-size: 14px; }
-        .website { font-size: 14px; }
-        p.cause { font-size: 14px; }
-        ul.unlist li { font-size: 14px; }
-        ol.list li { font-size: 14px; }
+        .udemy {
+          font-size: 20px;
+        }
+
+        .para {
+          font-size: 18px;
+        }
+
+        .please {
+          font-size: 16px;
+        }
+
+        .tf_you {
+          font-size: 15px;
+        }
+
+        .mission {
+          font-size: 14px;
+        }
+
+        .website {
+          font-size: 14px;
+        }
+
+        p.cause {
+          font-size: 14px;
+        }
+
+        ul.unlist li {
+          font-size: 14px;
+        }
+
+        ol.list li {
+          font-size: 14px;
+        }
       }
     }
   }

@@ -5,7 +5,7 @@ import "../../../../public/sass/pages/page.scss"
 
 
 
-const Terms_conditions = () => {
+const About = () => {
   return (
     <>
       
@@ -110,4 +110,4 @@ const Terms_conditions = () => {
   )
 }
 
-export default Terms_conditions;
+export default About;
