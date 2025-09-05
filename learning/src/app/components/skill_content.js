@@ -201,8 +201,8 @@ const Skill_content = () => {
                       <Accordion.Header>
                         <div className="accordion-header-content">
                           <h4>
-                            Getting Started with ChatGPT, Prompting, and How
-                            LLM's Work
+                            Getting Started with ChatGPT, Prompting, and How LLM
+                            s Work
                           </h4>
                           <p>9 lectures • 1hr 18min</p>
                         </div>
@@ -413,22 +413,22 @@ const Skill_content = () => {
                       available anywhere online. Even if you have{' '}
                       <strong>zero</strong> programming experience, this course
                       will take you from{' '}
-                      <strong>beginner to professional</strong>. Here's why:
+                      <strong>beginner to professional</strong>. Here s why:
                     </p>
                     <ul>
                       <li>
                         The course is taught by the{' '}
                         <strong>lead instructor</strong> at the App Brewery,
-                        London's{' '}
+                        London s{' '}
                         <strong>best in-person programming Bootcamp</strong>.
                       </li>
                       <li>
-                        The course has been updated and you'll be learning the
+                        The course has been updated and you ll be learning the
                         latest tools and technologies used at large companies
                         such as Apple, Google and Netflix.
                       </li>
                       <li>
-                        This course doesn't cut any corners, there are beautiful
+                        This course doesn t cut any corners, there are beautiful
                         <strong>animated explanation videos</strong> and tens of
                         <strong>real-world projects</strong> which you will get
                         to build. e.g. Tinder auto swiper, Snake game, Blog
@@ -440,14 +440,14 @@ const Skill_content = () => {
                         testing and feedback.
                       </li>
                       <li>
-                        We've taught over 600,000 students how to code and many
+                        We ve taught over 600,000 students how to code and many
                         have gone on to
                         <strong>change their lives</strong> by becoming
                         professional developers or starting their own tech
                         startup.
                       </li>
                       <li>
-                        You'll save yourself <strong>over $12,000</strong> by
+                        You ll save yourself <strong>over $12,000</strong> by
                         enrolling, and still get access to the same teaching
                         materials and learn from the same instructor and
                         curriculum as our in-person programming Bootcamp.
@@ -455,7 +455,7 @@ const Skill_content = () => {
                       <li>
                         The course is <strong>constantly updated</strong> with
                         new content, with new projects and modules determined by
-                        students - that's you!
+                        students - that s you!
                       </li>
                     </ul>
                   </div>
@@ -482,7 +482,7 @@ const Skill_content = () => {
                     This Premium course is included in plans
                   </p>
 
-                  <h3>Subscribe to Udemy’s top courses</h3>
+                  <h3>Subscribe to Udemys top courses</h3>
                   <p className="description">
                     Get this course, plus 26,000+ of our top-rated courses, with
                     Personal Plan.

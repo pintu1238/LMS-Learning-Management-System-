@@ -34,7 +34,7 @@ const Banner = () => {
                 slidesPerView={1}
                 loop={true}
                 autoplay={{
-                  delay: 3000,
+                  delay: 5000,
                   disableOnInteraction: false,
                 }}
                 // navigation={true}

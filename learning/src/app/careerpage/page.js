@@ -13,7 +13,7 @@ import Feedback from '../components/feedback';
 import Third_sec from '../components/third_sec';
 import All_courses from '../components/all_courses';
 import Faq from '../components/faq';
-const Homepage = () => {
+const Page = () => {
   return (
     <>
       <Career_banner />
@@ -31,4 +31,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Page;

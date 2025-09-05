@@ -45,10 +45,10 @@ const Third_sec = () => {
             modules={[Navigation, Pagination, Scrollbar, Autoplay]}
             spaceBetween={50}
             slidesPerView={3}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: true,
-            }}
+            // autoplay={{
+            //   delay: 3000,
+            //   disableOnInteraction: true,
+            // }}
             loop={true}
             navigation={{
               nextEl: '.swiper-button-next',
