@@ -5,8 +5,8 @@ import "../../../public/sass/pages/header.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
 import {
   faChevronRight,
@@ -38,12 +38,15 @@ const Header = () => {
               <div className="inner_area">
                 <div className="left_area">
                   <div className="logo_area">
-                    <Image
-                      src="/images/logo.png"
-                      alt="Logo"
-                      width={120}
-                      height={50}
-                    />
+                    <Link href="/">
+                      <Image
+                        src="/images/logo.png"
+                        alt="Logo"
+                        width={120}
+                        height={50}
+                        style={{ cursor: "pointer" }}
+                      />
+                    </Link>
                   </div>
                 </div>
                 <div className="right_area">
@@ -294,8 +297,15 @@ const Header = () => {
                       </div>
                     </nav>
                     <div className="search_box">
-                      <FontAwesomeIcon icon={["fab", "searchengin"]} className="search_icon" />
-                      <input type="Ftext" placeholder="Search for anything" className="search_icon" />
+                      <FontAwesomeIcon
+                        icon={["fab", "searchengin"]}
+                        className="search_icon"
+                      />
+                      <input
+                        type="Ftext"
+                        placeholder="Search for anything"
+                        className="search_icon"
+                      />
                     </div>
                   </div>
                   <div className="right_of_right">
@@ -303,7 +313,7 @@ const Header = () => {
                       <Link href="#">Plans & Pricing</Link>
                     </div>
                     <div className="cart_area">
-                      <Link href="#">
+                      <Link href="/cart">
                         <FontAwesomeIcon
                           icon={["fas", "cart-plus"]}
                           className="cart_logo"
@@ -312,10 +322,10 @@ const Header = () => {
                     </div>
                     <ul className="auth_links">
                       <li>
-                        <Link href="#">Log in</Link>
+                        <Link href="/login">Log in</Link>
                       </li>
                       <li>
-                        <Link href="#">Sign up</Link>
+                        <Link href="/signup">Sign up</Link>
                       </li>
                     </ul>
                     <div className="user_account">
@@ -325,8 +335,10 @@ const Header = () => {
                       />
                     </div>
                     <div className="bars">
-                      <FontAwesomeIcon icon={["fas", "bars"]}
-                        className="bar_icons" />
+                      <FontAwesomeIcon
+                        icon={["fas", "bars"]}
+                        className="bar_icons"
+                      />
                     </div>
                   </div>
                 </div>

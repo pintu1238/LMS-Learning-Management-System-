@@ -646,6 +646,7 @@ const All_courses = () => {
                   >
                     {courseData[activeTab].cards[activeSub].map((course, i) => (
                       <SwiperSlide key={i}>
+                        <Link href="/skills_page">
                         <div className="course_card">
                           <div className="course_image">
                             <Image
@@ -692,6 +693,7 @@ const All_courses = () => {
                             </div>
                           </div>
                         </div>
+                        </Link>
                       </SwiperSlide>
                     ))}
                   </Swiper>

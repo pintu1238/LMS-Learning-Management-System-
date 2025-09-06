@@ -1,28 +1,29 @@
-'use client';
-import React from 'react';
-import '../../../public/sass/pages/third_sec.scss';
-import { Col, Container, Row } from 'react-bootstrap';
-import Image from 'next/image';
-import Card3_1 from '../../../public/images/third_sec1.webp';
-import Card3_2 from '../../../public/images/third_sec2.webp';
-import Card3_3 from '../../../public/images/third_sec3.webp';
-import Card3_4 from '../../../public/images/third_sec4.webp';
-import Card3_5 from '../../../public/images/third_sec5.webp';
+"use client";
+import React from "react";
+import "../../../public/sass/pages/third_sec.scss";
+import { Col, Container, Row } from "react-bootstrap";
+import Image from "next/image";
+import Card3_1 from "../../../public/images/third_sec1.webp";
+import Card3_2 from "../../../public/images/third_sec2.webp";
+import Card3_3 from "../../../public/images/third_sec3.webp";
+import Card3_4 from "../../../public/images/third_sec4.webp";
+import Card3_5 from "../../../public/images/third_sec5.webp";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faStar);
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Autoplay, Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper/modules";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import Link from "next/link";
 
 const Third_sec = () => {
   return (
@@ -51,8 +52,8 @@ const Third_sec = () => {
             // }}
             loop={true}
             navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
             }}
             // pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}
@@ -94,41 +95,44 @@ const Third_sec = () => {
             }}
           >
             <SwiperSlide>
-              <div className="career_card">
-                <div className="card_image">
-                  <Image
-                    src={Card3_1}
-                    alt="Full Stack Web Developer"
-                    title="images"
-                    fetchPriority="low"
-                  />
-                </div>
-                <div className="card_content">
-                  <h4>Full Stack Web Developer</h4>
-                  <div className="rating_row">
-                    <ul>
-                      <li>
-                        <div className="star_logo badge_item">
-                          <FontAwesomeIcon
-                            icon={['fas', 'star']}
-                            className="star_icon"
-                          />
-                          4.7
-                        </div>
-                      </li>
-                      <li>
-                        <p className="badge_item">455K ratings</p>
-                      </li>
-                      <li>
-                        <p className="badge_item">87.8 total hours</p>
-                      </li>
-                    </ul>
+              <Link href="/careerpage">
+                <div className="career_card">
+                  <div className="card_image">
+                    <Image
+                      src={Card3_1}
+                      alt="Full Stack Web Developer"
+                      title="images"
+                      fetchPriority="low"
+                    />
+                  </div>
+                  <div className="card_content">
+                    <h4>Full Stack Web Developer</h4>
+                    <div className="rating_row">
+                      <ul>
+                        <li>
+                          <div className="star_logo badge_item">
+                            <FontAwesomeIcon
+                              icon={["fas", "star"]}
+                              className="star_icon"
+                            />
+                            4.7
+                          </div>
+                        </li>
+                        <li>
+                          <p className="badge_item">455K ratings</p>
+                        </li>
+                        <li>
+                          <p className="badge_item">87.8 total hours</p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
 
             <SwiperSlide>
+              <Link href="/careerpage">
               <div className="career_card">
                 <div className="card_image">
                   <Image
@@ -145,7 +149,7 @@ const Third_sec = () => {
                       <li>
                         <div className="star_logo badge_item">
                           <FontAwesomeIcon
-                            icon={['fas', 'star']}
+                            icon={["fas", "star"]}
                             className="star_icon"
                           />
                           4.7
@@ -161,9 +165,11 @@ const Third_sec = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             </SwiperSlide>
 
             <SwiperSlide>
+              <Link href="/careerpage">
               <div className="career_card">
                 <div className="card_image">
                   <Image
@@ -180,7 +186,7 @@ const Third_sec = () => {
                       <li>
                         <div className="star_logo badge_item">
                           <FontAwesomeIcon
-                            icon={['fas', 'star']}
+                            icon={["fas", "star"]}
                             className="star_icon"
                           />
                           4.7
@@ -196,9 +202,11 @@ const Third_sec = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             </SwiperSlide>
 
             <SwiperSlide>
+              <Link href="/careerpage">
               <div className="career_card">
                 <div className="card_image">
                   <Image
@@ -215,7 +223,7 @@ const Third_sec = () => {
                       <li>
                         <div className="star_logo badge_item">
                           <FontAwesomeIcon
-                            icon={['fas', 'star']}
+                            icon={["fas", "star"]}
                             className="star_icon"
                           />
                           4.7
@@ -231,9 +239,11 @@ const Third_sec = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             </SwiperSlide>
 
             <SwiperSlide>
+              <Link href="/careerpage">
               <div className="career_card">
                 <div className="card_image">
                   <Image
@@ -250,7 +260,7 @@ const Third_sec = () => {
                       <li>
                         <div className="star_logo badge_item">
                           <FontAwesomeIcon
-                            icon={['fas', 'star']}
+                            icon={["fas", "star"]}
                             className="star_icon"
                           />
                           4.7
@@ -266,6 +276,7 @@ const Third_sec = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             </SwiperSlide>
           </Swiper>
 

@@ -17,7 +17,7 @@ const Homepage = () => {
       <Banner />
       <Third_sec />
       <All_courses />
-      <Analytics />
+      {/* <Analytics /> */}
       <Fifth_sec />
 
       <Plan />
