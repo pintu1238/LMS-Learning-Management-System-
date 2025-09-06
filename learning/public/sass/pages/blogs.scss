@@ -1,63 +1,69 @@
-section.blogs {
-    background-color: #f6f9fb;
+section.develop {
+    div.inner_develop {
+        padding: 30px 0;
 
-    div.inner_blogs {
-        min-height: 500px;
-        height: 100%;
+        h3.aritcla_dev {
+            font-size: 40px;
+            font-weight: 700;
+            color: black;
+            margin-bottom: 15px;
+            font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
 
-        div.left {
-            float: left;
-            display: flex;
-            height: 100%;
-            align-items: center;
-            width: calc(100% - 550px);
+        div.card_area {
+            padding: 15px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            overflow: hidden;
 
-            div.contant {
-                width: 400px;
-
-                h1 {
-                    font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-                    font-size: 48px;
-                    margin-bottom: 24px;
-                    color: #1c1d1f;
-                    font-weight: 700;
-                }
-                p.contant_heading{
-                    font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-                    font-size: 19px;
-                    // margin-bottom: 24px;
-                    color: #1c1d1f;
-                    font-weight: 500;
-                    display: block;
-                }
+            &:hover {
+                box-shadow: 1px 1px 5px rgba(81, 81, 81, 0.4);
+                border-color: transparent;
+                cursor: pointer;
             }
-        }
-    }
 
-    div.right {
-        float: right;
-        width: 550px;
+            // p.top_head {
+            //     // display: block;
+            //     color: #6a6f73;
+            //     font-size: 16px;
+            //     font-weight: 700;
+            //     margin-bottom: 8px;
+            // }
 
-        div.banner_img {
-            height: 450px;
-            width: 470px;
-        }
-    }
+            h3.heading {
+                color: #1c1d1f;
+                font-weight: 700;
+                font-size: 22px;
+                min-height: 100px;
+                margin-bottom: 20px;
+                font-family: "Udemy Sans", "SF Pro Text", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            }
 
-    &::after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-}
-section.nav_banner{
-    background-color:#1c1d1f;
-    div.innernav{
-        nav{
-            ul{
-                li{
-                    a{
-                        
+            div.lower {
+                display: flex;
+                align-items: center;
+
+                div.left {
+                    width: 60px;
+
+                    div.person {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        border: transparent;
+                    }
+                }
+
+                div.right {
+                    width: calc(100% - 60px);
+
+                    div.contant {
+                        p {
+                            font-size: 16px;
+                            color: #6a6f73;
+                            font-weight: 400;
+                        }
                     }
                 }
             }
