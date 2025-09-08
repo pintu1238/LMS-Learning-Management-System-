@@ -19,12 +19,12 @@ const Page = () => {
       <Career_banner />
       <Career_sectiontwo />
 
-      <Aboutus_sectiontwo />
+      {/* <Aboutus_sectiontwo /> */}
 
       <Career_sectionthree />
-      <Career_sectionfour />
-      <Faq />
-      <Feedback />
+      {/* <Career_sectionfour /> */}
+      {/* <Faq /> */}
+      {/* <Feedback /> */}
       <Third_sec />
       {/* <All_courses /> */}
     </>
