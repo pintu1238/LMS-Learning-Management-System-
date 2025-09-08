@@ -170,6 +170,7 @@ const Skillpage_paid = () => {
   const [activeTab, setActiveTab] = useState("overview"); // ✅ Fixed missing state
 
   return (
+    
     <section className="paid_section">
       <Container fluid>
         <Row>
