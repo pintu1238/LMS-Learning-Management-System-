@@ -38,7 +38,7 @@ const Banner = () => {
                   disableOnInteraction: false,
                 }}
                 // navigation={true}
-                scrollbar={{ draggable: true }}
+                // scrollbar={{ draggable: true }}
                 pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}

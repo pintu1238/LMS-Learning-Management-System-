@@ -26,7 +26,7 @@ const Page = () => {
       <Faq />
       <Feedback />
       <Third_sec />
-      <All_courses />
+      {/* <All_courses /> */}
     </>
   );
 };

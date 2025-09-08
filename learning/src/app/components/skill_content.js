@@ -133,7 +133,7 @@ const Skill_content = () => {
                 </div>
 
                 <div className="course_info_section">
-                  <div className="related_topics">
+                  {/* <div className="related_topics">
                     <h4>Explore related topics</h4>
                     <div className="tags">
                       <ul>
@@ -148,7 +148,7 @@ const Skill_content = () => {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="course_includes">
                     <h4>This course includes:</h4>

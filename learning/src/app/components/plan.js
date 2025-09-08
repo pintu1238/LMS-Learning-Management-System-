@@ -32,6 +32,7 @@ const Plan = () => {
           </Row>
 
           <Row>
+            {/* Personal Plan */}
             <Col xxl={4} xl={4} lg={6} md={6} sm={6} xs={12}>
               <div className="card">
                 <div className="top">
@@ -44,7 +45,7 @@ const Plan = () => {
                 </div>
 
                 <div className="bottom">
-                  <h3>Starting at ₹500 per month</h3>
+                  <p className="price">Starting at ₹500 per month</p>
                   <p>Billed monthly or annually. Cancel anytime.</p>
 
                   <div className="subs_area">
@@ -54,37 +55,39 @@ const Plan = () => {
                   <ul>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Access to 26,000+ top courses</h3>
+                      <p className="feature">Access to 26,000+ top courses</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Access to 26,000+ top courses</h3>
+                      <p className="feature">Access to 26,000+ top courses</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Access to 26,000+ top courses</h3>
+                      <p className="feature">Access to 26,000+ top courses</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Access to 26,000+ top courses</h3>
+                      <p className="feature">Access to 26,000+ top courses</p>
                     </li>
                   </ul>
                 </div>
               </div>
             </Col>
+
+            {/* Team Plan */}
             <Col xxl={4} xl={4} lg={6} md={6} sm={6} xs={12}>
               <div className="card">
                 <div className="top">
                   <h3>Team Plan</h3>
-                  <p>For you</p>
+                  <p>For teams</p>
                   <div className="icon_area">
                     <FontAwesomeIcon icon={['fas', 'user-graduate']} />
-                    <p>Individual</p>
+                    <p>Multiple users</p>
                   </div>
                 </div>
 
                 <div className="bottom">
-                  <h3>Starting at ₹500 per month</h3>
+                  <p className="price">Starting at ₹500 per month</p>
                   <p>Billed monthly or annually. Cancel anytime.</p>
 
                   <div className="subs_area">
@@ -94,42 +97,43 @@ const Plan = () => {
                   <ul>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Access to 13,000+ top courses</h3>
+                      <p className="feature">Access to 13,000+ top courses</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Certification prep</h3>
+                      <p className="feature">Certification prep</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Goal-focused recommendations</h3>
+                      <p className="feature">Goal-focused recommendations</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>AI-powered coding exercises</h3>
+                      <p className="feature">AI-powered coding exercises</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Analytics and adoption reports</h3>
+                      <p className="feature">Analytics and adoption reports</p>
                     </li>
                   </ul>
                 </div>
               </div>
             </Col>
 
+            {/* Enterprise Plan */}
             <Col xxl={4} xl={4} lg={6} md={6} sm={6} xs={12}>
               <div className="card">
                 <div className="top">
                   <h3>Enterprise Plan</h3>
-                  <p>For you</p>
+                  <p>For organizations</p>
                   <div className="icon_area">
                     <FontAwesomeIcon icon={['fas', 'user-graduate']} />
-                    <p>Individual</p>
+                    <p>Enterprise</p>
                   </div>
                 </div>
 
                 <div className="bottom">
-                  <h3>Starting at ₹500 per month</h3>
+                  <p className="price">Starting at ₹500 per month</p>
                   <p>Billed monthly or annually. Cancel anytime.</p>
 
                   <div className="subs_area">
@@ -139,45 +143,49 @@ const Plan = () => {
                   <ul>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Access to 30,000+ top courses</h3>
+                      <p className="feature">Access to 30,000+ top courses</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Certification prep</h3>
+                      <p className="feature">Certification prep</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Goal-focused recommendations</h3>
+                      <p className="feature">Goal-focused recommendations</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>AI-powered coding exercises</h3>
+                      <p className="feature">AI-powered coding exercises</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Advanced analytics and insights</h3>
+                      <p className="feature">Advanced analytics and insights</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Dedicated customer success team</h3>
+                      <p className="feature">Dedicated customer success team</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>
+                      <p className="feature">
                         International course collection featuring 15 languages
-                      </h3>
+                      </p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Customizable content</h3>
+                      <p className="feature">Customizable content</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Hands-on tech training with add-on</h3>
+                      <p className="feature">
+                        Hands-on tech training with add-on
+                      </p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={['fas', 'check']} />
-                      <h3>Strategic implementation services with add-on</h3>
+                      <p className="feature">
+                        Strategic implementation services with add-on
+                      </p>
                     </li>
                   </ul>
                 </div>
