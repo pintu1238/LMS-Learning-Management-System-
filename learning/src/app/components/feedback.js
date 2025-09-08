@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import "../../../public/sass/pages/feedback.scss";
-import Link from "next/link";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import '../../../public/sass/pages/feedback.scss';
+import Link from 'next/link';
 
 const Feedback = () => {
   return (
@@ -28,9 +28,9 @@ const Feedback = () => {
                     <p className="name">Diksha S</p>
                   </div>
                 </div>
-                <div className="view_link">
+                {/* <div className="view_link">
                   <Link href="#">Business Intelligence (BI)</Link>
-                </div>
+                </div> */}
               </div>
             </Col>
 
@@ -50,9 +50,9 @@ const Feedback = () => {
                     <p className="name">Chethan B</p>
                   </div>
                 </div>
-                <div className="view_link">
+                {/* <div className="view_link">
                   <Link href="#">View this Go (golang) course</Link>
-                </div>
+                </div> */}
               </div>
             </Col>
 
@@ -72,9 +72,9 @@ const Feedback = () => {
                     <p className="name">Batchu K</p>
                   </div>
                 </div>
-                <div className="view_link">
+                {/* <div className="view_link">
                   <Link href="#">View this Java course</Link>
-                </div>
+                </div> */}
               </div>
             </Col>
 
@@ -94,16 +94,15 @@ const Feedback = () => {
                     <p className="name">Ankit K</p>
                   </div>
                 </div>
-                <div className="view_link">
+                {/* <div className="view_link">
                   <Link href="#">View this Web Development Course</Link>
-                </div>
+                </div> */}
               </div>
             </Col>
           </Row>
         </div>
       </Container>
     </div>
-
   );
 };
 
