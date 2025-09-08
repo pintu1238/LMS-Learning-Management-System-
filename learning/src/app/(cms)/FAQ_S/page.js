@@ -1,12 +1,15 @@
 import React from 'react'
 import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
+import FAQ from '@/app/components/faq';
 
-const  FAQ_s = () => {
+const  FAQ_S = () => {
   return (
     <>
         
-        <section className='faq_section'>
+<FAQ />
+
+        {/* <section className='faq_section'>
             <Container>
                 <Row>
                     <Col >
@@ -19,9 +22,9 @@ const  FAQ_s = () => {
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </section> */}
    
        </>
   )
 }
-export default  FAQ_s;
+export default  FAQ_S
