@@ -157,6 +157,7 @@
         }
 
         .search_box {
+          display: flex;
           border: 1px solid #ccc;
           border-radius: 15px;
           background-color: white;
@@ -170,18 +171,21 @@
             vertical-align: middle;
             margin-right: 8px;
           }
+          .input_box {
+            
+            input {
+              width: 600px;
+              display: inline-block;
+              border: none;
+              outline: none;
+              background: transparent;
+              font-size: 14px;
+              color: #333;
+              vertical-align: middle;
 
-          input {
-            display: inline-block;
-            border: none;
-            outline: none;
-            background: transparent;
-            font-size: 14px;
-            color: #333;
-            vertical-align: middle;
-
-            &::placeholder {
-              color: #999;
+              &::placeholder {
+                color: #999;
+              }
             }
           }
         }
@@ -293,14 +297,15 @@
 }
 
 /* 1680 desktop */
-@media (min-width: 1680px) and (max-width: 1919px) {}
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
 
 /* 1600 desktop */
-@media (min-width: 1600px) and (max-width: 1679px) {}
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
 
 /* Above 1400 and Below 1599 Desktop*/
 @media (min-width: 1400px) and (max-width: 1599px) {
-
   .header_section {
     .inner_area {
       .left_area {
@@ -346,7 +351,6 @@
 
 /* 1300 desktop only */
 @media (min-width: 1300px) and (max-width: 1399px) {
-
   .header_section {
     .inner_area {
       .left_area {
@@ -392,7 +396,6 @@
 
 /* 1200 desktop only */
 @media (min-width: 1200px) and (max-width: 1299px) {
-
   .header_section {
     .inner_area {
       .left_area {
@@ -880,5 +883,4 @@
     align-items: center;
     width: calc(100% - 90px);
   }
-
 }

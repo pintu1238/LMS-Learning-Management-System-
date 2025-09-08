@@ -297,15 +297,19 @@ const Header = () => {
                       </div>
                     </nav>
                     <div className="search_box">
-                      <FontAwesomeIcon
-                        icon={["fab", "searchengin"]}
-                        className="search_icon"
-                      />
-                      <input
-                        type="Ftext"
-                        placeholder="Search for anything"
-                        className="search_icon"
-                      />
+                      <div>
+                        <FontAwesomeIcon
+                          icon={["fab", "searchengin"]}
+                          className="search_icon"
+                        />
+                      </div>
+                      <div className="input_box">
+                        <input
+                          type="Ftext"
+                          placeholder="Search for anything"
+                          className="search_icon"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div className="right_of_right">
