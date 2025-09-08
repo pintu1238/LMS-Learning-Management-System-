@@ -1,0 +1,23 @@
+.dashboard_section {
+    .inner_main {
+        padding: 60px 0;
+        min-width: 1000px;
+        width: 100%;
+        
+        .left_area {
+            width: 250px;
+            float: left;
+            
+        }
+        
+        .right_area {
+            float: right;
+            width: calc(100% - 250px);
+        }
+        &::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    }
+}

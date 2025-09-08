@@ -9,6 +9,7 @@ import All_courses from '../components/all_courses';
 import Analytics from '../components/analytics';
 import Fifth_sec from '../components/fifth_sec';
 import Plan from '../components/plan';
+import ProfilePage from '../components/profile';
 
 
 const Homepage = () => {
@@ -17,12 +18,10 @@ const Homepage = () => {
       <Banner />
       <Third_sec />
       <All_courses />
-      {/* <Analytics /> */}
       <Fifth_sec />
-
       <Plan />
       <Feedback />
-     
+      <ProfilePage />
     </>
   );
 };
