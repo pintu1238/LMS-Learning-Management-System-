@@ -52,17 +52,40 @@
 
     .career_card {
       position: relative;
-      border: 1px solid #eaeaea;
       border-radius: 10px;
       overflow: hidden;
-      // background: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease;
-      padding: 15px;
-      cursor: pointer;
+      transition: all 0.4s ease;
+      background: #fff;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transform: skewX(-25deg);
+      }
 
       &:hover {
-        transform: translateY(-5px);
+        transform: translateY(-5px) scale(0.97);
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+
+        &::after {
+          animation: shine 1s ease forwards;
+        }
+      }
+
+      @keyframes shine {
+        100% {
+          left: 120%;
+        }
       }
 
       .card_image {
@@ -125,19 +148,24 @@
 }
 
 /* 1680 desktop */
-@media (min-width: 1680px) and (max-width: 1919px) {}
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
 
 /* 1600 desktop */
-@media (min-width: 1600px) and (max-width: 1679px) {}
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
 
 /* Above 1400 and Below 1599 Desktop*/
-@media (min-width: 1400px) and (max-width: 1599px) {}
+@media (min-width: 1400px) and (max-width: 1599px) {
+}
 
 /* 1300 desktop only */
-@media (min-width: 1300px) and (max-width: 1399px) {}
+@media (min-width: 1300px) and (max-width: 1399px) {
+}
 
 /* 1200 desktop only */
-@media (min-width: 1200px) and (max-width: 1299px) {}
+@media (min-width: 1200px) and (max-width: 1299px) {
+}
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -323,4 +351,5 @@
 }
 
 /* Smaller phones */
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+}
