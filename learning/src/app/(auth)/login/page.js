@@ -38,7 +38,11 @@ const Login = () => {
                     <Form.Group className="email" controlId="formBasicPassword">
                       <Form.Control type="email" placeholder="Email" />
                     </Form.Group>
-                    <Button variant="primary" type="submit" className='continue'>
+                    <Form.Group className="password" controlId="formBasicPassword">
+                      <Form.Control type="password" placeholder="Password" />
+                    </Form.Group>
+
+                    <Button variant="primary" type="submit" className='continue' href='/homepage'>
                       Submit
                     </Button>
                   </Form>
@@ -61,10 +65,13 @@ const Login = () => {
                   <div className="other">
                     <div className="option">
                       <p>Don't have an account?   </p>
-                      <Link href="#" className='sign_up'>Sign up</Link>
+                      <Link href="/signup" className='sign_up'>Sign up</Link>
                     </div>
-                    <div className="option">
+                    {/* <div className="option">
                       <Link href="#" className='sign_up'>Log in with your organization</Link>
+                    </div> */}
+                    <div className="option">
+                      <Link href="/forget_passward" className='sign_up'>Forget Password</Link>
                     </div>
                   </div>
                 </div>

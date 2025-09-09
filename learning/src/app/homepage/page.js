@@ -10,6 +10,7 @@ import Analytics from '../components/analytics';
 import Fifth_sec from '../components/fifth_sec';
 import Plan from '../components/plan';
 import ProfilePage from '../components/profile';
+import ForgotPasswordHello from '../components/ChangePAsswordDashBoasrd';
 
 
 const Homepage = () => {
@@ -22,6 +23,7 @@ const Homepage = () => {
       <Plan />
       <Feedback />
       <ProfilePage />
+      <ForgotPasswordHello />
     </>
   );
 };

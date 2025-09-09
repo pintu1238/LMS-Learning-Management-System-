@@ -201,6 +201,45 @@ section.login {
     }
 }
 
+.form-div {
+
+    .email,
+    .password {
+        margin-bottom: 16px;
+
+        input {
+            font-family: $heading-font;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 12px 15px;
+            border: 1px solid $secondary-color;
+            border-radius: $border-radius;
+            margin-bottom: 16px;
+
+            &:focus {
+                outline: $gray;
+            }
+        }
+    }
+
+    .continue {
+        width: 100%;
+        padding: 12px;
+        background-color: $primary-color;
+        border: 1px solid transparent;
+        font-family: $heading-font;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: $border-radius;
+        color: $white;
+        transition: $transition;
+
+        &:hover {
+            background-color: darken($primary-color, 8%);
+        }
+    }
+}
+
 section.login .loginArea .right .contant .other .option p,
 section.login .loginArea .right .contant .other .option a.sign_up {
     display: inline-block;

@@ -35,8 +35,8 @@ const Login = () => {
                                         <Form.Group className="code-number" controlId="formBasicPassword">
                                             <Form.Control type="number" placeholder="code" />
                                         </Form.Group>
-                                        <Button variant="primary" type="submit" className='continue'>
-                                            Sign up
+                                        <Button variant="primary" type="submit" className='continue' href='/homepage'>
+                                            Login
                                         </Button>
                                     </Form>
                                     <div className="other">

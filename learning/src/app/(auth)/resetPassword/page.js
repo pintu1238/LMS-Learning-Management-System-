@@ -33,7 +33,7 @@ const ResetPassword = () => {
                                         <Form.Group className="password" controlId="formConfirmPassword">
                                             <Form.Control type="password" placeholder="Confirm Password" />
                                         </Form.Group>
-                                        <Button href="/reset-success" type="submit" className='continue'>
+                                        <Button href="/resetSuccess" type="submit" className='continue'>
                                             Reset Password
                                         </Button>
                                     </Form>

@@ -33,7 +33,7 @@ const ForgotPassword = () => {
                                         <Form.Group className="email" controlId="formBasicEmail">
                                             <Form.Control type="email" placeholder="Enter your email" />
                                         </Form.Group>
-                                        <Button href="/reset-success" type="submit" className='continue'>
+                                        <Button href="/resetPassword" type="submit" className='continue'>
                                             Send Reset Link
                                         </Button>
                                     </Form>

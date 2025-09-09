@@ -43,7 +43,7 @@ const Signup = () => {
                                         <Form.Group className="check-box" controlId="formBasicCheckbox">
                                             <Form.Check type="checkbox" label="Send me special offers, personalized recommendations, and learning tips." />
                                         </Form.Group>
-                                        <Button variant="primary" type="submit" className='continue'>
+                                        <Button variant="primary" type="submit" className='continue' href='/otp_section'>
                                             Submit
                                         </Button>
                                     </Form>

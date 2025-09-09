@@ -5,7 +5,6 @@ import Image from 'next/image';
 import LoginImg from "../../../../public/images/LoginBannerImage.webp";
 import second_media_image from "../../../../public/images/login_banner_media.webp";
 import "../../../../public/sass/pages/changepassword.scss";
-// import "../../../../"
 
 const ChangePassword = () => {
     const [formData, setFormData] = useState({

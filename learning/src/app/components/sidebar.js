@@ -6,10 +6,10 @@ const SideBar = () => {
   return (
     <div className="bar">
       <ul>
-        <li><Link href="/profile">Profile</Link></li>
-        <li><Link href="#">Change Password</Link></li>
-        <li><Link href="#">Wishlist</Link></li>
-        <li><Link href="#">Log Out</Link></li>
+        <li><Link href="/dashboard">Profile</Link></li>
+        <li><Link href="/wishlist">Wishlist</Link></li>
+        <li><Link href="/chaangePasswordDashboard">Change Password</Link></li>
+        <li><Link href="/signup">Log Out</Link></li>
       </ul>
     </div>
   )
