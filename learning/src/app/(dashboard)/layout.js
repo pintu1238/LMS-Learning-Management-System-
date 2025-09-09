@@ -1,16 +1,16 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "../../../public/sass/pages/dashboard.scss";
 import SideBar from "../components/sidebar";
-import Header from "../components/header";
+// import Header from "../components/header";
 
 export default function DashboardLayout({ children }) {
     return (
         <>
-        <Header />
+        {/* <Header /> */}
             <div className="dashboard_section">
                 <Container>
                     <Row>
-                        <Col>
+                        <Col xxl={12} xl={12} lg={12} md={12} ms={12} xm={12}>
                             <div className="inner_main">
                                 <div className="left_area">
                                     <SideBar />
