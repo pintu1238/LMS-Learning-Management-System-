@@ -60,7 +60,7 @@ const Header = () => {
                           setShowDevelopmentSubMenu(false); // Nested menu bhi hide hoga
                         }}
                       >
-                        <Link href="#">Explore</Link>
+                      <Link href="#">Explore</Link>
 
                         {showExploreMenu && (
                           <div className="explore-dropdown-menu">
@@ -296,6 +296,7 @@ const Header = () => {
                         )}
                       </div>
                     </nav>
+                    
                     <div className="search_box">
                       <div>
                         <FontAwesomeIcon
