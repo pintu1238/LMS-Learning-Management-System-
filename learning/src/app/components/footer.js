@@ -11,78 +11,58 @@ const Footer = () => {
       <section className="footer">
         <Container>
           <Row>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12}>
+            <Col xxl={4} xl={4} lg={4} md={6} sm={6} xs={12}>
               <div className="inner_area">
-                <h3>About</h3>
+                <h3>Page</h3>
                 <ul>
                   <li>
                     <Link href="#">About us</Link>
                   </li>
                   <li>
-                    <Link href="#">Careers</Link>
+                    <Link href="#">Career</Link>
                   </li>
                   <li>
-                    <Link href="#">Contact us</Link>
+                    <Link href="#">Skills</Link>
                   </li>
                   <li>
                     <Link href="#">Blog</Link>
                   </li>
-                  <li>
-                    <Link href="#">Investors</Link>
-                  </li>
                 </ul>
               </div>
             </Col>
 
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12}>
+            <Col xxl={4} xl={4} lg={4} md={6} sm={6} xs={12}>
               <div className="inner_area">
-                <h3>Discover Udemy</h3>
+                <h3>Useful Link</h3>
                 <ul type="none">
                   <li>
-                    <Link href="#">Get the app</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Teach on Udemy</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Plans and Pricing</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Affiliate</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Help and Support</Link>
-                  </li>
-                </ul>
-              </div>
-            </Col>
-
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12}>
-              <div className="inner_area">
-                <h3>Udemy for Business</h3>
-                <ul>
-                  <li>
-                    <Link href="#">Udemy Business</Link>
-                  </li>
-                </ul>
-              </div>
-            </Col>
-
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12}>
-              <div className="inner_area">
-                <h3>Legal & Accessibility</h3>
-                <ul>
-                  <li>
-                    <Link href="#">Accessibility statement</Link>
+                    <Link href="#">Term & Condition</Link>
                   </li>
                   <li>
                     <Link href="#">Privacy policy</Link>
                   </li>
                   <li>
-                    <Link href="#">Sitemap</Link>
+                    <Link href="#">FAQ's</Link>
                   </li>
                   <li>
-                    <Link href="#">Terms</Link>
+                    <Link href="#">Contact us</Link>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+
+            <Col xxl={4} xl={4} lg={4} md={6} sm={6} xs={12}>
+              <div className="inner_area">
+                <h3>Social Links</h3>
+                <ul>
+                  <li>
+                    <Link href="#">Facebook</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Instagram</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Twiter</Link>
                   </li>
                 </ul>
               </div>

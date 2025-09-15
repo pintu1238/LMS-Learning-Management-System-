@@ -313,9 +313,6 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="right_of_right">
-                    <div className="plans_area">
-                      <Link href="#">Plans & Pricing</Link>
-                    </div>
                     <div className="cart_area">
                       <Link href="/cart">
                         <FontAwesomeIcon
