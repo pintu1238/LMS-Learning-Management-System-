@@ -10,6 +10,7 @@ import Plan from '../components/plan';
 const Homepage = () => {
   return (
     <>
+    
       <Banner />
       <Third_sec />
       <All_courses />
