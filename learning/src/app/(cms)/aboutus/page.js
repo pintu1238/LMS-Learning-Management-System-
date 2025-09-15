@@ -21,7 +21,7 @@ const page = () => {
       <Aboutus_banner />
       <Aboutus_sectiontwo/>
       <Aboutus_third/>
-      <Aboutus_for/>
+      {/* <Aboutus_for/> */}
       <Aboutus_five/>
       <Aboutus_testimonials/>
       <Fifth_sec/>
