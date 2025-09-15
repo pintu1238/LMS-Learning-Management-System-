@@ -647,59 +647,59 @@ const All_courses = () => {
                     {courseData[activeTab].cards[activeSub].map((course, i) => (
                       <SwiperSlide key={i}>
                         <Link href="/skills_page">
-                        <div className="course_card">
-                          <div className="course_image">
-                            <Image
-                              src={all_courses_first}
-                              alt={course.title}
-                              title="images"
-                              width={100}
-                              height={100}
-                              fetchPriority="low"
-                            />
-                          </div>
-                          <div className="course_content">
-                            <h3>{course.title}</h3>
-                            <p>{course.author}</p>
+                          <div className="course_card">
+                            <div className="course_image">
+                              <Image
+                                src={all_courses_first}
+                                alt={course.title}
+                                title="images"
+                                width={100}
+                                height={100}
+                                fetchPriority="low"
+                              />
+                            </div>
+                            <div className="course_content">
+                              <h3>{course.title}</h3>
+                              <p>{course.author}</p>
 
-                            <div className="review">
-                              <ul>
-                                <li>
-                                  <h3>4.7</h3>
-                                </li>
-                                <li>
-                                  <FontAwesomeIcon icon={['fas', 'star']} />
-                                </li>
-                                <li>
-                                  <FontAwesomeIcon icon={['fas', 'star']} />
-                                </li>
-                                <li>
-                                  <FontAwesomeIcon icon={['fas', 'star']} />
-                                </li>
-                                <li>
-                                  <FontAwesomeIcon icon={['fas', 'star']} />
-                                </li>
-                                <li>
-                                  <FontAwesomeIcon icon={['fas', 'star']} />
-                                </li>
-                              </ul>
-                            </div>
-                            <div className="price">
-                              <h3>${course.price}</h3>
-                              <p>${course.price + 100}</p>
-                            </div>
-                            <div className="s">
-                              <h3>Bestseller</h3>
+                              <div className="review">
+                                <ul>
+                                  <li>
+                                    <h3>4.7</h3>
+                                  </li>
+                                  <li>
+                                    <FontAwesomeIcon icon={['fas', 'star']} />
+                                  </li>
+                                  <li>
+                                    <FontAwesomeIcon icon={['fas', 'star']} />
+                                  </li>
+                                  <li>
+                                    <FontAwesomeIcon icon={['fas', 'star']} />
+                                  </li>
+                                  <li>
+                                    <FontAwesomeIcon icon={['fas', 'star']} />
+                                  </li>
+                                  <li>
+                                    <FontAwesomeIcon icon={['fas', 'star']} />
+                                  </li>
+                                </ul>
+                              </div>
+                              <div className="price">
+                                <h3>${course.price}</h3>
+                                <p>${course.price + 100}</p>
+                              </div>
+                              <div className="s">
+                                <h3>Bestseller</h3>
+                              </div>
                             </div>
                           </div>
-                        </div>
                         </Link>
                       </SwiperSlide>
                     ))}
                   </Swiper>
 
                   <div className="all_page">
-                    <Link href="#">Show All Courses</Link>
+                    <Link href="/allcourses_page">Show All Courses</Link>
                   </div>
                 </div>
               </div>
