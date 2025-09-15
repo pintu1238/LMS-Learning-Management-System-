@@ -16,16 +16,16 @@ const Footer = () => {
                 <h3>Page</h3>
                 <ul>
                   <li>
-                    <Link href="#">About us</Link>
+                    <Link href="./aboutus">About us</Link>
                   </li>
                   <li>
-                    <Link href="#">Career</Link>
+                    <Link href="./careers">Career</Link>
                   </li>
                   <li>
-                    <Link href="#">Skills</Link>
+                    <Link href="./skills_page">Skills</Link>
                   </li>
                   <li>
-                    <Link href="#">Blog</Link>
+                    <Link href="./blogs">Blog</Link>
                   </li>
                 </ul>
               </div>
@@ -36,16 +36,16 @@ const Footer = () => {
                 <h3>Useful Link</h3>
                 <ul type="none">
                   <li>
-                    <Link href="#">Term & Condition</Link>
+                    <Link href="./terms_conditions">Term & Condition</Link>
                   </li>
                   <li>
-                    <Link href="#">Privacy policy</Link>
+                    <Link href="./Privacy_policy">Privacy policy</Link>
                   </li>
                   <li>
-                    <Link href="#">FAQ's</Link>
+                    <Link href="./FAQ_S">FAQ's</Link>
                   </li>
                   <li>
-                    <Link href="#">Contact us</Link>
+                    <Link href="./contactUs">Contact us</Link>
                   </li>
                 </ul>
               </div>
@@ -84,12 +84,12 @@ const Footer = () => {
               <Link href="#">2025 Udemy inc.</Link>
             </div>
 
-            <div className="cs">
+            {/* <div className="cs">
               <h3>Cookie Settings</h3>
             </div>
             <div className="language">
               <h3>language</h3>
-            </div>
+            </div> */}
           </div>
         </Container>
       </section>
